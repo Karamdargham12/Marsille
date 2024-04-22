@@ -1,5 +1,13 @@
 
-
+@font-face {
+  font-family: travelFont;
+  src: url('/assets/fonts/alfont_com_Alilato-ExtraLight.ttf');
+}
+@font-face {
+  font-family: travelBoldFont;
+  font-weight: bold;
+  src: url('/assets/fonts/Bold.ttf');
+}
 :root {
 
   --battleship-gray: hsl(0, 0%, 53%);
