@@ -767,6 +767,9 @@ body {
 
 
 @media (min-width: 992px) {
+  .t-about{
+    text-align: start;
+  }
 
   .about-list-2 {
     display: flex !important;
@@ -945,4 +948,9 @@ body {
 
   .about .container { grid-template-columns: 0.7fr 1fr; }
 
+}
+@media (max-width: 768px) {
+  .t-about{
+    text-align: center;
+  }
 }
