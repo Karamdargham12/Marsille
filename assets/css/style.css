@@ -1,12 +1,12 @@
 
 @font-face {
   font-family: travelFont;
-  src: url('/assets/fonts/alfont_com_Alilato-ExtraLight.ttf');
+  src: url('../fonts/alfont_com_Alilato-ExtraLight.ttf');
 }
 @font-face {
   font-family: travelBoldFont;
   font-weight: bold;
-  src: url('/assets/fonts/Bold.ttf');
+  src: url('../fonts/Bold.ttf');
 }
 :root {
 
@@ -754,7 +754,7 @@ body {
   .footer-bottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .footer-bottom .logo,
@@ -891,7 +891,7 @@ body {
    * FOOTER
    */
 
-  .footer-top { grid-template-columns: 1fr 1fr 1fr 2fr; }
+  .footer-top { grid-template-columns: 1fr 1fr  1fr 1fr ; }
 
 }
 
