@@ -962,3 +962,54 @@ body {
     width: 100% !important;
   }
 }
+.news-holder {
+  height: 50px;
+  padding: 0 20px;
+  background-color: var(--viridian-green);
+  position: relative;
+  overflow: hidden
+}
+
+.news {
+  white-space: nowrap;
+  position: absolute;
+  top: 5px;
+  left: 100%;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+
+.news .new {
+  display: inline-block;
+  padding: 0 10px;
+  color: #e7ded4;
+  position: relative;
+}
+
+.news .new:not(:last-child):after {
+  content: "";
+  width: 1px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  background-color: #e7ded4;
+}
+
+.rtl-rss {
+  display: block;
+  max-width: max-content;
+  margin: auto;
+  margin-top: 50px;
+  padding: 1rem 2rem;
+  border: 1px solid brown;
+  border-radius: 15px;
+  color: brown;
+  text-decoration: none !important;
+  opacity: 0.8;
+}
+
+.rtl-rss:hover {
+  opacity: 1;
+}
