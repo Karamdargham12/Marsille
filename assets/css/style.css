@@ -96,7 +96,9 @@ span,
 input,
 button,
 ion-icon { display: block; }
+section{
 
+}
 input,
 button {
   border: none;
@@ -953,5 +955,10 @@ body {
 @media (max-width: 768px) {
   .t-about{
     text-align: center;
+  }
+}
+@media (max-width: 1025px) and (min-width: 1020px){
+  .about-item{
+    width: 100% !important;
   }
 }
