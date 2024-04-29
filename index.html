@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 
@@ -70,6 +71,26 @@
 
           <img src="./assets/images/shape-2.png" width="56" height="74" alt="Vector Shape" class="shape shape-2">
       </section>
+      <div class="news-holder">
+        <div class="news">
+            <div class="new">
+                <div style="font-size: 20px;display: flex;justify-content: center;align-items: center;gap: 5px"><ion-icon name="call-outline"></ion-icon><span>+971542470061</span></div>
+            </div>
+        <div class="new">
+            <div style="font-size: 20px;display: flex;justify-content: center;align-items: center;gap: 5px"><ion-icon name="call-outline"></ion-icon><span>+971542470060</span></div>
+    </div>
+            <div class="new">
+                <div style="font-size: 20px;display: flex;justify-content: center;align-items: center;gap: 5px"><ion-icon name="call-outline"></ion-icon><span>+971585584820</span></div>
+        </div>
+            <div class="new">
+                <div style="font-size: 20px;display: flex;justify-content: center;align-items: center;gap: 5px"><ion-icon name="call-outline"></ion-icon><span>+97143448602</span></div>
+        </div>
+            <div class="new">
+                <div style="font-size: 20px;display: flex;justify-content: center;align-items: center;gap: 5px"><ion-icon name="mail-outline"></ion-icon><span>info@marsilletravel.com</span></div>
+            </div>
+
+        </div>
+        </div>
 
       <section class="section destination">
         <div class="container">
@@ -595,7 +616,39 @@
     <ion-icon name="chevron-up-outline"></ion-icon>
   </a>
 
+  <script>
+    // Activating the animation of the news bar
+    var totalWidth = 0;
 
+    // Ensure that the totalWidth calculation includes all elements
+    $(".news-holder .news").each(function() {
+        var oneWidth = $(this).outerWidth(true); // true includes margin
+        totalWidth += oneWidth;
+    });
+
+    function newsBar() {
+        var news = $(".news-holder .news"),
+            newsSpeed = 15000; // 20 seconds for example
+
+        $(".news-holder .news").animate({
+            "left": -totalWidth
+        }, newsSpeed, "linear", function() {
+            // Reset the position of the news to the start
+            $(this).css("left", "");
+            newsBar();
+        });
+    }
+    newsBar();
+
+    $(".news-holder").on("mouseenter", function() {
+        $(this).find(".news").stop(true);
+    });
+
+    $(".news-holder").on("mouseleave", function() {
+        newsBar();
+    });
+
+</script>
 
 
 
