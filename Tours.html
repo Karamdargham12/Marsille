@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tours</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+</head>
+<style>
+
+
+
+
+
+
+
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(24rem, 5fr));
+		grid-gap: 1rem
+        
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+
+</style>
+
+<body id="top">
+
+    <header class="header" data-header>
+      <div class="container">
+  
+        <a href="#">
+          <h1 class="logo">MarsilleTravel</h1>
+        </a>
+  
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <ion-icon name="menu-outline" class="open"></ion-icon>
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+  
+        <nav class="navbar">
+  
+          <ul class="navbar-list">
+  
+            <li>
+              <a href="./index.html" class="navbar-link">Home</a>
+            </li>
+  
+            <li>
+              <a href="./about-us.html" class="navbar-link">About Us</a>
+            </li>
+  
+            <li>
+              <a href="#" class="navbar-link">Tours</a>
+            </li>
+  
+            <li>
+              <a href="./contact-us.html" class="navbar-link">Contact Us</a>
+            </li>
+  
+          </ul>
+        <a href="./ar/index.html"><img src="./assets/images/uae.png"></a>
+        </nav>
+  
+      </div>
+    </header>
+    
+    <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
+
+        <h1 style="display: flex;justify-content: start;" class="heading">United Arab Emirates</h1> 
+        <span style="padding-bottom: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nisi, vitae necessitatibus doloribus perferendis modi dolorem illo incidunt pariatur, voluptatibus quisquam voluptatem aspernatur. Ullam, quia. Et, illum. Cum doloribus est soluta ad tempore ipsum. Officia excepturi saepe fuga iste odio aspernatur, facere quos quae mollitia unde quod exercitationem quia quibusdam dolore repellat autem ut deserunt doloribus debitis id quasi voluptatem obcaecati officiis cupiditate! Nisi, alias temporibus saepe molestias placeat deleniti sequi totam voluptates consequuntur aliquid expedita magnam quo illo inventore, autem aspernatur amet hic repellat aperiam cum. Tempore fugiat ea ipsum consequuntur omnis sunt facere aliquid magni laborum commodi excepturi officia nisi at illum sed doloribus quos optio, eos molestiae adipisci ut reiciendis in est. Temporibus, odit quod corrupti ex quae maxime officiis aspernatur doloribus sint quia eos officia provident repudiandae repellat, cumque tempore esse error neque praesentium non animi itaque voluptatibus! Excepturi distinctio sequi omnis reprehenderit corporis magnam numquam sint dolor repellendus unde nisi iure corrupti non minus sed ipsam, id molestiae impedit animi enim rerum optio totam hic quod. Molestias harum corrupti ab, veniam velit ipsum minima ad enim eligendi totam facere rerum. Numquam, veritatis consequatur. Animi adipisci culpa nostrum quidem iusto doloremque cum quas inventore distinctio doloribus!</span>
+    
+        <div class="gallery">
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    
+    
+
+
+
+    <footer class="footer" style="background-image: url('../assets/images/footer-bg.png')">
+        <div class="container">
+    
+            <div class="footer-top">
+    
+                <ul style="text-align: center;" class="footer-list">
+    
+                    <li>
+                        <p class="footer-list-title">Top Destination </p>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">United Arab Emirates, Dubai</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Bangkok, Thailand</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Georgia, Tbilisi</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Azərbaycan, Baku</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Saudi Arabia, Makkah</a>
+                    </li>
+    
+                </ul>
+    
+    
+                <ul style="text-align: center;" class="footer-list">
+    
+                    <li>
+                        <p  class="footer-list-title"> Quick Links</p>
+                    </li>
+    
+                    <li>
+                        <a href="./about-us.html" class="footer-link">About Us</a>
+                    </li>
+    
+                    <li>
+                        <a href="./contact-us.html" class="footer-link">Contact Us</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Tours</a>
+                    </li>
+    
+    
+                </ul>
+    
+    
+                <ul class="footer-list">
+    
+                    <li>
+                        <p style="text-align: center;" class="footer-list-title">Our Vision</p>
+                    </li>
+    
+                    <li>
+                        <p style="text-align: center;   " > We strive to be Marseille Tourism and Travel's leader in our field and the first choice for those seeking unique travel experiences around the world.</p>
+                    </li>
+    
+    
+    
+                </ul>
+                <ul class="footer-list">
+    
+                    <li>
+                        <a style="text-align: center; padding-top: 50px;" href="#" class="logo">MarsilleTravel</a>
+                    </li>
+    
+                </ul>
+    
+    
+            </div>
+    
+    
+            <div class="footer-bottom">
+                <p class="copyright">
+                    All Rights Reserved
+                    &copy; 2024 <a href="#" class="copyright-link">AunakIT</a>
+                </p>
+    
+                <ul class="social-list">
+    
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-google"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+    
+        </div>
+    </footer>
+    
+      
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
