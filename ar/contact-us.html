@@ -42,7 +42,7 @@
     input::placeholder{
       color: white;
     }
-    #contactform {
+    #contact-form {
       height: 215px;
     }
     .right {
@@ -87,9 +87,6 @@
       color: #fff;
       margin-top: 20px;
       border: none;
-      &:hover {
-        background: lighten($btnBackground, 20%);
-      }
     }
     #map-canvas {
       width: 100%;
@@ -144,25 +141,27 @@
     <div class="col-md-offset-1 col-md-10" style="margin-bottom: 20px;padding-top: 20px">
       <h2 style="font-family: 'travelFont' !important;font-weight: 900">تواصل معنا</h2>
     </div>
-    <form method="post" action="contact.php" name="contactform" id="contactform">
+    <form action="../swiftmailer_form.php" method="post" id="contact-form">
       <div class="col-md-offset-1 col-md-5">
         <fieldset>
           <input name="name" type="text" id="name" size="30" placeholder="الاسم">
           <br>
           <input name="email" type="text" id="email" size="30" placeholder="البريد الإلكتروني">
           <br>
-          <input name="phone" type="text" id="phone" size="30" placeholder="رقم الجوال">
+          <input name="phone_number" type="text" id="phone_number" size="30" placeholder="رقم الجوال">
           <br>
+            <input name="msg_subject" type="text" id="msg_subject" size="30" placeholder="الموضوع">
+            <br>
         </fieldset>
       </div>
       <div class="col-md-5">
         <fieldset>
-          <textarea name="comments" cols="40" rows="20" id="comments" placeholder="رسالة" style="color: white;font-family: 'travelFont' !important;font-weight: 900"></textarea>
+          <textarea name="message" cols="40" rows="20" id="message" placeholder="رسالة" style="color: white;font-family: 'travelFont' !important;font-weight: 900"></textarea>
         </fieldset>
       </div>
       <div class="col-md-offset-1 col-md-10">
         <fieldset>
-          <button type="submit" class="btn btn-lg" id="submit" value="Submit">إرسال</button>
+          <button type="submit" class="btn btn-lg" id="submit" value="Send">إرسال</button>
         </fieldset>
       </div>
     </form>
@@ -306,7 +305,71 @@
   <ion-icon name="chevron-up-outline"></ion-icon>
 </a>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
+<script>
+
+    (function ($) {
+        "use strict"; // Start of use strict
+        $("#contactForm").validator().on("submit", function (event) {
+            if (event.isDefaultPrevented()) {
+                // handle the invalid form...
+                formError();
+                submitMSG(false, "Did you fill in the form properly?");
+            } else {
+                // everything looks good!
+                event.preventDefault();
+                submitForm();
+            }
+        });
+
+
+        function submitForm(){
+            // Initiate Variables With Form Content
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var msg_subject = $("#msg_subject").val();
+            var phone_number = $("#phone_number").val();
+            var message = $("#message").val();
+
+
+            $.ajax({
+                type: "POST",
+                url: "assets/php/form-process.php",
+                data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message,
+                success : function(text){
+                    if (text == "success"){
+                        formSuccess();
+                    } else {
+                        formError();
+                        submitMSG(false,text);
+                    }
+                }
+            });
+        }
+
+        function formSuccess(){
+            $("#contactForm")[0].reset();
+            submitMSG(true, "Message Submitted!")
+        }
+
+        function formError(){
+            $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                $(this).removeClass();
+            });
+        }
+
+        function submitMSG(valid, msg){
+            if(valid){
+                var msgClasses = "h4 tada animated text-success";
+            } else {
+                var msgClasses = "h4 text-danger";
+            }
+            $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+        }
+    }(jQuery));
+
+</script>
 <script src="../assets/js/script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
