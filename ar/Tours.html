@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marsille Travel</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+
+
+
+
+
+
+    .heading {
+        font-family: "Montserrat", Arial, sans-serif;
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+        padding: 3.5rem 0;
+        color: #1a1a1a;
+    }
+    
+    .heading span {
+        display: block;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        /* Compensate for excess margin on outer gallery flex items */
+        margin: -1rem -1rem;
+    }
+    
+    .gallery-item {
+        /* Minimum width of 24rem and grow to fit available space */
+        flex: 1 0 24rem;
+        /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+        margin: 1rem;
+        box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+    }
+    
+    .gallery-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 400ms ease-out;
+    }
+    
+    .gallery-image:hover {
+        transform: scale(1.15);
+    }
+    
+    /*
+    
+    The following rule will only run if your browser supports CSS grid.
+    
+    Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+    
+    */
+    
+    @supports (display: grid) {
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(24rem, 5fr));
+            grid-gap: 1rem
+            
+        }
+    
+        .gallery,
+        .gallery-item {
+            margin: 0;
+        }
+    }
+    
+    
+    </style>
+
+<body id="top" dir="rtl" style="font-family: 'travelFont' !important;font-weight: 900">
+
+<header class="header" data-header dir="ltr">
+    <div class="container">
+
+        <a href="../ar/index.html" >
+            <h1 class="logo">MarsilleTravel</h1>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+            <ion-icon name="menu-outline" class="open"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+        <nav class="navbar">
+
+            <ul class="navbar-list"  dir="rtl">
+
+                <li>
+                    <a href="../ar/index.html" class="navbar-link">الصفحة الرئيسية</a>
+                </li>
+
+                <li>
+                    <a href="../ar/about-us.html" class="navbar-link">حول</a>
+                </li>
+
+                <li>
+                    <a href="#" class="navbar-link">رحلاتنا</a>
+                </li>
+
+                <li>
+                    <a href="./contact-us.html" class="navbar-link">تواصل</a>
+                </li>
+
+            </ul>
+            <a dir="ltr" href="../index.html"><img src="../assets/images/usa.png"></a>
+        </nav>
+
+    </div>
+</header>
+
+
+    
+    <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
+
+        <h1 style="display: flex;justify-content: start;" class="heading">الإمارات العربية المتحدة، دبي</h1> 
+        <span style="padding-bottom: 40px;">
+            دبي هي إمارة تقع في دولة الإمارات العربية المتحدة، وهي مدينة تشتهر بجمالها وروعتها. تعد دبي واحدة من أكثر الوجهات السياحية شهرة في العالم، حيث تجمع بين المعالم الحديثة والتاريخية والثقافية في مكان واحد.
+            تتميز دبي بمشاهدها الحضارية المذهلة والمعمار الرائع. يمكن للزوار الاستمتاع برؤية العديد من الأبراج الشاهقة مثل برج خليفة، وهو أطول برج في العالم، وبرج العرب، الذي يتميز بتصميمه الفريد وموقعه على جزيرة اصطناعية.
+            
+            تمتع بجمال مدينة دبي الساحر مع شركة مارسيليا للسياحة والسفر. يتضمن برنامج هذه الرحلة العديد من النشاطات ابتداءً من زيارة نخلة جميرا الشهيرة والاستمتاع بالإطلالة المميزة على المدينة والبحر، انتقالاً إلى زيارة برج خليفة، أعلى برج في العالم، والتمتع بمشاهدة المدينة من الأعلى، ومن ثمّ زيارة دبي مول، أحد أكبر المجمعات التجارية في العالم، لتقوم بالتسوق وتجربة مجموعة متنوعة من المطاعم العالمية.
+            
+            بالإضافة إلى ذلك يمكنكم طلب تحويل هذه الرحلة إلى رحلة خاصة، والقيام بالتعديلات المناسبة على برنامجها لتتناسب مع تطلعاتكم.
+            تواصلوا معنا اليوم للحصول على المزيد من المعلومات حول هذه الرحلة الرائعة والحجز. فريقنا المتخصص سيكون سعيداً بتقديم الدعم والمساعدة لكم في تحقيق هذه التجربة الاستثنائية.
+            
+            </span>
+        <div class="gallery">
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+    <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
+
+        <h1 style="display: flex;justify-content: start;" class="heading">تايلاند، بانكوك</h1> 
+        <span style="padding-bottom: 40px;">
+  
+            تايلاند، بلد الابتسامات، يعتبر واحداً من الوجهات الساحرة والمذهلة في جنوب شرق آسيا. تتميز هذه البلاد بتنوع طبيعي رائع وتراث ثقافي غني، مما يجعلها واحدة من أكثر الوجهات شهرة وجذباً في العالم.
+
+            كما تُعرف تايلاند بشواطئها البديعة، حيث تحتضن العديد من الجزر الخلابة مثل جزر في في، كوه ساموي، وفينانغ. حيث تتميز هذه الجزر بشواطئها الرملية الناعمة، المياه الفيروزية الصافية، والمناظر البانورامية الخلابة. يمكن للزوار الاسترخاء على الشواطئ الهادئة والاستمتاع بالأنشطة المائية مثل الغوص وركوب الزوارق الشراعية.
+            
+            رحلة استكشافية مثيرة بانتظاركم مع شركة مارسيليا للسياحة والسفر إلى تايلاند، تبدأ المغامرة في قلب بانكوك، حيث يوجد جمال المدينة الحديثة والتراث الثقافي الفريد. ومن ثم زيارة المعابد البوذية الساحرة مثل وات أرون ووات فو والاستمتاع بمشاهدة المعابد التقليدية والتماثيل الذهبية المذهلة.
+            ومن ثم تستطيع التوجّه إلى سوق تشاتشوك، الذي يُعتبر واحداً من أكبر الأسواق المركزية في آسيا. لتستمتع بالمشي عبر الممرات المزدحمة بالتجار والمحلات التجارية الملونة، بالإضافة إلى شراء الهدايا التذكارية الفريدة والحرف اليدوية.
+            ومن ثمّ زيارة الأحياء القديمة مثل كاو سان وتشيناتاون، حيث تعكس الهندسة المعمارية القديمة وأزقتها الضيقة تاريخ وثقافة تايلاند الغنية، والتجول في شوارعها الرائعة وتذوّق المأكولات الشهية في المطاعم التقليدية.
+            
+            بالإضافة إلى ذلك يمكنكم طلب تحويل هذه الرحلة إلى رحلة خاصة، والقيام بالتعديلات المناسبة على برنامجها لتتناسب مع تطلعاتكم.
+            تواصلوا معنا اليوم للحصول على المزيد من المعلومات حول هذه الرحلة الرائعة والحجز. فريقنا المتخصص سيكون سعيداً بتقديم الدعم والمساعدة لكم في تحقيق هذه التجربة الاستثنائية.
+            
+
+            </span>
+        <div class="gallery">
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+            </div>
+    
+        </div>
+    
+    </div>
+
+     
+    <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
+
+        <h1 style="display: flex;justify-content: start;" class="heading">جورجيا، تبليسي</h1> 
+        <span style="padding-bottom: 40px;">
+           
+            تعتبر تبليسي وجهة سياحية متنوعة ورائعة تجمع بين التاريخ العريق والثقافة الغنية والمناظر الطبيعية الخلابة، ومكاناً مميزاً للاستكشاف وتحقيق أقصى درجة من المتعة.
+ 
+            لذلك تدعو شركة مارسيليا للسياحة والسفر عملاءها الكرام للانضمام إلى رحلتها الخاصة بجورجيا وقلب العاصمة المميزة تبليسي، واكتشاف وجهة ساحرة ومذهلة في قلب جبال القوقاز.
+            
+            ستبدأ بزيارة موقع جبل كازبيغي في محمية كازبيغي الطبيعية والتمتع بالمناظر الخلابة للجبال والشلالات الجميلة، ومن ثمّ تنتقل إلى البلدة القديمة في تبليسي لاستكشاف شوارعها الضيقة والمباني التاريخية مثل كاتدرائية سيومي وقلعة ناريكالا التاريخية. حيث يمكنك أيضاً الاستمتاع بمناظر المدينة من جسر السلام المعلق والتجول في ساحة الحرية.
+            
+            تعد جورجيا أيضاً موطناً لثقافة غنية وتقاليد فنية متنوعة. يمكنك زيارة متحف الفن الوطني في تبليسي واستكشاف المعروضات الفنية الرائعة للفنانين المحليين المشهورين. لتتمكّن فيما بعد من زيارة كاتدرائية سفاريفلي الأثرية وكنيسة ميتشكيتا الشهيرة للاستمتاع بالهندسة المعمارية الرائعة والأجواء الروحية.
+            تتميز جورجيا أيضاً بتقاليدها الفريدة ومأكولاتها الشهية. يمكنك هناك تذوق المأكولات التقليدية مثل الخبز الشركالي والخمري والخضروات المشوية المشهورة. 
+            
+            بالإضافة إلى ذلك يمكنكم طلب تحويل هذه الرحلة إلى رحلة خاصة، والقيام بالتعديلات المناسبة على برنامجها لتتناسب مع تطلعاتكم.
+            تواصلوا معنا اليوم للحصول على المزيد من المعلومات حول هذه الرحلة الرائعة والحجز. فريقنا المتخصص سيكون سعيداً بتقديم الدعم والمساعدة لكم في تحقيق هذه التجربة الاستثنائية.
+            
+
+            </span>
+        <div class="gallery">
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+            </div>
+    
+        </div>
+    
+    </div>
+    <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
+
+        <h1 style="display: flex;justify-content: start;" class="heading">أذربيجان، باكو</h1> 
+        <span style="padding-bottom: 40px;">
+           
+            مدينة باكو في أذربيجان هي وجهة سياحية فريدة من نوعها تجمع بين التراث الثقافي الغني والتطور المعماري الحديث، كما 
+            تتميز بجمالها الطبيعي الخلاب وثقافتها المتنوعة. 
+            رحلة شيقة ومثيرة تنتظركم مع شركة مارسيليا للسياحة والسفر، تبدأ الرحلة بزيارة البلدة القديمة، التي تُعتبر موقعاً للتراث العالمي من قبل اليونسكو. حيث تستطيع استكشاف أزقتها الضيقة والمباني التاريخية الرائعة مثل قصر الشيرفان والمسجد التاريخي والبازارات التقليدية.
+            ومن ثم يمكنك الانتقال إلى شبه جزيرة أبشيرون وساحل البحر الأسود حيث المتعة المطلقة بشواطئها الجميلة والمناظر الطبيعية الخلابة. ولا يمكن أن تنسى زيارة بحيرة جابالي الساحرة والاستمتاع بمناظرها الخلابة والأنشطة المائية مثل ركوب القوارب وصيد الأسماك.
+            ستتمكّن أيضاً من زيارة متحف نيزامي في باكو، ومشاهدة الأعمال الفنية الرائعة والتراث الثقافي للبلاد.  
+            كما يمكنك زيارة العديد من الوجهات الثقافية والسياحية مثل قصر شيرفانشاه وقصر موسى داغ ومعبد أتشاري في جبال قوبوستان.
+            
+            بالإضافة إلى ذلك يمكنكم طلب تحويل هذه الرحلة إلى رحلة خاصة، والقيام بالتعديلات المناسبة على برنامجها لتتناسب مع تطلعاتكم.
+            
+            تواصلوا معنا اليوم للحصول على المزيد من المعلومات حول هذه الرحلة الرائعة والحجز. فريقنا المتخصص سيكون سعيداً بتقديم الدعم والمساعدة لكم في تحقيق هذه التجربة الاستثنائية.
+            
+
+
+            </span>
+        <div class="gallery">
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
+
+        <h1 style="display: flex;justify-content: start;" class="heading">المملكة العربية السعودية، مكة</h1> 
+        <span style="padding-bottom: 40px;">
+           
+            تعتبر مكة المكرمة مقصداً دينياً عظيماً ومركزاً حضارياً ذو أهمية عالمية، لذلك تدعو شركة مارسيليا للسياحة والسفر عملاءها الكرام للقيام بتجربة استثنائية إلى واحدة من أروع الوجهات في المملكة العربية السعودية، مكة المكرمة. تتميز مكة المكرمة بالمناظر الطبيعية الخلابة والأماكن المقدسة التي تجذب الملايين من الزوار سنوياً. 
+            أُولى وجهاتنا ستكون إلى الحرم المكي الشريف والقيام بالعمرة أو الحج والتجول في ساحاته الشاسعة، والمسجد الحرام الذي يعتبر أكبر مسجد في العالم. يمكنك أيضاً زيارة جبل النور ومغارة حراء للاستمتاع بالأجواء الروحية والمشاهد الخلابة.
+            
+            بالإضافة إلى الأماكن المقدسة، تحتضن مكة العديد من المعالم الثقافية والتاريخية. حيث ستتمكّن من زيارة متحف مكة واستكشاف مجموعة متنوعة من المعروضات التي تسلط الضوء على التاريخ والثقافة المحلية. ومن ثم ستنتقل إلى زيارة سوق زهرة العباس والتجول في الأزقة الضيقة وشراء الحرف اليدوية والتحف التذكارية.
+            
+            تعتبر مكة أيضاً مكاناً مثالياً لتذوق المأكولات السعودية الشهية. حيث يمكنك تجربة تشكيلة واسعة من الأطباق العربية اللذيذة في المطاعم والمقاهي المحلية، مثل الكبسة والمنسف والمأكولات الشعبية الأخرى التي تعكس تراث المنطقة.
+            
+            بالإضافة إلى ذلك يمكنكم طلب تحويل هذه الرحلة إلى رحلة خاصة، والقيام بالتعديلات المناسبة على برنامجها لتتناسب مع تطلعاتكم.
+            
+            تواصلوا معنا اليوم للحصول على المزيد من المعلومات حول هذه الرحلة الرائعة والحجز. فريقنا المتخصص سيكون سعيداً بتقديم الدعم والمساعدة لكم في تحقيق هذه التجربة الاستثنائ
+            </span>
+        <div class="gallery">
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer" style="background-image: url('../assets/images/footer-bg.png')">
+    <div class="container">
+
+        <div class="footer-top">
+
+            <ul style="text-align: center;" class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">أفضل رحلاتنا</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">الإمارات العربية المتحدة، دبي</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">تايلاند، بانكوك</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">جورجيا، تبليسي</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">أذربيجان، باكو</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">المملكة العربية السعودية، مكة</a>
+                </li>
+
+            </ul>
+
+
+            <ul style="text-align: center;" class="footer-list">
+
+                <li>
+                    <p  class="footer-list-title">روابط سريعة</p>
+                </li>
+
+                <li>
+                    <a href="../ar/about-us.html" class="footer-link">حول</a>
+                </li>
+
+                <li>
+                    <a href="contact-us.html" class="footer-link">تواصل</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">رحلاتنا</a>
+                </li>
+
+
+            </ul>
+
+
+            <ul class="footer-list">
+
+                <li>
+                    <p style="text-align: center;" class="footer-list-title">رؤيتنا</p>
+                </li>
+
+                <li>
+                    <p style="text-align: center;   " >نسعى لتكون مارسيليا للسياحة والسفر الرائدة في مجالها، والوجهة الأولى للباحثين عن تجارب سفر فريدة في جميع أنحاء العالم</p>
+                </li>
+
+
+
+            </ul>
+            <ul class="footer-list">
+
+                <li>
+                    <a style="text-align: center; padding-top: 50px;" href="#" class="logo">MarsilleTravel</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                جميع الحقوق محفوظة
+                &copy; 2024 <a href="#" class="copyright-link">AunakIT</a>
+            </p>
+
+            <ul class="social-list">
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+<script src="../assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
