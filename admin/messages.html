@@ -283,22 +283,17 @@ padding-top: 20px;
 
     const db = getDatabase();
     const starCountRef = ref(db, 'users/');
-    // تعريف متغير للإشارة إلى حالة التحميل
     let isLoading = true;
 
-    // تحديث واجهة المستخدم لإظهار مؤشر التحميل
     function showLoadingIndicator() {
-        // يمكنك إضافة العنصر الخاص بمؤشر التحميل في HTML وإظهاره هنا
         document.getElementById('loadingIndicator').style.display = 'block';
     }
 
-    // إخفاء مؤشر التحميل بعد تحميل البيانات
     function hideLoadingIndicator() {
         document.getElementById('loadingIndicator').style.display = 'none';
         isLoading = false;
     }
 
-    // دالة لتحديث الواجهة بالبيانات
     function updateUI(dataArray) {
         const incarousel = document.getElementById('in');
         let isFirstItem = true;
@@ -320,18 +315,16 @@ padding-top: 20px;
   </div>
 </div>
 </div>`;
-            isFirstItem = false; // تأكد من أن العنصر الأول فقط هو الذي يحصل على الصف 'active'
+            isFirstItem = false;
         });
-        hideLoadingIndicator(); // إخفاء مؤشر التحميل بعد تحميل البيانات
+        hideLoadingIndicator();
     }
 
-    // دالة لعرض رسالة الخطأ للمستخدم
     function showErrorToUser(error) {
-        // عرض رسالة الخطأ للمستخدم هنا
+
         console.error('Error:', error);
     }
 
-    // الدالة لجلب بيانات الـ API
     function fetchData() {
         showLoadingIndicator();
         onValue(starCountRef, (snapshot) => {
@@ -342,13 +335,11 @@ padding-top: 20px;
                     ...data[key]
                 };
             });
-            updateUI(dataArray); // تحديث الواجهة بالبيانات
+            updateUI(dataArray);
         }, (error) => {
-            showErrorToUser(error); // عرض رسالة الخطأ للمستخدم في حالة وجود خطأ
+            showErrorToUser(error);
         });
     }
-
-    // استدعاء الدالة لجلب البيانات
     fetchData();
 </script>
 </body>
