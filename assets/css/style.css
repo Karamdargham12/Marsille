@@ -159,15 +159,15 @@ body {
   }
   .titleEn{
     position: absolute;
-    top: 200px;
+    top: 280px;
     left: 0;
-   padding-left: 0px;
-    font-size: 20px;
+   padding-left: 10px;
+    font-size: 26px;
 
   }
   .titleEn h1{
-    width: 80%;
-    text-align: center;
+    width: 70%;
+    text-align: left;
   }
 }
 
@@ -953,9 +953,13 @@ body {
   .titleEn{
     text-align: left!important;
     position: absolute!important;
-    transform: translate(-80%,-50%)!important;   
-    font-family: 'travelFont' !important;
-    font-size:25px!important;
+    transform: translate(-45%,-40%)!important;
+    font-size:30px!important;
+    padding-left: 40px;
+  }
+  .titleEn h1{
+    width: 60%;
+    text-align: left;
   }
 
   /**
@@ -1012,7 +1016,7 @@ body {
     text-align: center;
   }
   .titleEn{
-    padding-top: 50px;
+    padding-top: 80px;
     text-align: left;
     top: 0;
     width: 100%;
