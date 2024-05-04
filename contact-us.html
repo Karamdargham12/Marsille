@@ -104,37 +104,41 @@
 <header class="header" data-header>
     <div class="container">
 
-        <a href="./index.html">
-            <h1 class="logo">MarsilleTravel</h1>
-        </a>
-
         <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
             <ion-icon name="menu-outline" class="open"></ion-icon>
             <ion-icon name="close-outline" class="close"></ion-icon>
         </button>
 
         <nav class="navbar">
+            <div>
+                <a href="./index.html" dir="ltr">
+                    <img src="./assets/images/Logo.png" class="logo" alt="MarsilleTravel">
+                </a>
+            </div>
+            <div>
+                <ul class="navbar-list">
 
-            <ul class="navbar-list">
+                    <li>
+                        <a href="./index.html" class="navbar-link">Home</a>
+                    </li>
 
-                <li>
-                    <a href="./index.html" class="navbar-link">Home</a>
-                </li>
+                    <li>
+                        <a href="./about-us.html" class="navbar-link">About Us</a>
+                    </li>
 
-                <li>
-                    <a href="./about-us.html" class="navbar-link">About Us</a>
-                </li>
+                    <li>
+                        <a href="./Tours.html" class="navbar-link">Tours</a>
+                    </li>
 
-                <li>
-                    <a href="./Tours.html" class="navbar-link">Tours</a>
-                </li>
+                    <li>
+                        <a href="./contact-us.html" class="navbar-link">Contact Us</a>
+                    </li>
 
-                <li>
-                    <a href="#" class="navbar-link">Contact Us</a>
-                </li>
-
-            </ul>
-            <a href="ar/contact-us.html"><img src="./assets/images/uae.png"></a>
+                </ul>
+            </div>
+            <div>
+                <a href="./ar/contact-us.html"><img src="./assets/images/uae.png"></a>
+            </div>
         </nav>
 
     </div>
@@ -144,25 +148,26 @@
         <div class="col-md-offset-1 col-md-10" style="margin-bottom: 20px;padding-top: 20px">
             <h2>Contact Us<i class="fa fa-paper-plane-o"></i></h2>
         </div>
-        <form method="post" action="contact.php" name="contactform" id="contactform">
+        <div class="alert" style="display: none;text-align: center;color: white;font-size: 20px;">Message sent</div>
+        <form method="post" id="registrationform">
             <div class="col-md-offset-1 col-md-5">
                 <fieldset>
                     <input name="name" type="text" id="name" size="30" placeholder="Name">
                     <br>
                     <input name="email" type="text" id="email" size="30" placeholder="Email">
                     <br>
-                    <input name="phone" type="text" id="phone" size="30" placeholder="Phone">
+                    <input name="phone_number" type="text" id="phone_number" size="30" placeholder="Phone">
                     <br>
                 </fieldset>
             </div>
             <div class="col-md-5">
                 <fieldset>
-                    <textarea name="comments" cols="40" rows="20" id="comments" placeholder="Message" style="color: white"></textarea>
+                    <textarea name="message" cols="40" rows="20" id="message" placeholder="Message" style="color: white"></textarea>
                 </fieldset>
             </div>
             <div class="col-md-offset-1 col-md-10">
                 <fieldset>
-                    <button type="submit" class="btn btn-lg" id="submit" value="Submit">Send Message</button>
+                    <button onclick="sendMessage()" type="submit" class="btn btn-lg" id="submit" value="Send">Send Message</button>
                 </fieldset>
             </div>
         </form>
@@ -232,7 +237,7 @@
                 </li>
 
                 <li>
-                    <p style="text-align: center;   " > We strive to be Marseille Tourism and Travel's leader in our field and the first choice for those seeking unique travel experiences around the world.</p>
+                    <p style="text-align: center;" > We strive to be Marseille Tourism and Travel's leader in our field and the first choice for those seeking unique travel experiences around the world.</p>
                 </li>
 
 
@@ -241,7 +246,11 @@
             <ul class="footer-list">
 
                 <li>
-                    <a style="text-align: center; padding-top: 50px;" href="#" class="logo">MarsilleTravel</a>
+                    <div >
+                        <a href="./index.html" dir="ltr" style="display: flex;justify-content: center;align-items: center;padding-top: 20px">
+                            <img src="./assets/images/Logo.png" class="logo-footer" alt="MarsilleTravel">
+                        </a>
+                    </div>
                 </li>
 
             </ul>
@@ -253,40 +262,33 @@
         <div class="footer-bottom">
             <p class="copyright">
                 All Rights Reserved
-                &copy; 2024 <a href="#" class="copyright-link">AunakIT</a>
+                &copy; 2024 <a href="https://aunak.it" class="copyright-link">AunakIT</a>
             </p>
 
             <ul class="social-list">
 
                 <li>
-                    <a href="#" class="social-link">
+                    <a href="https://www.facebook.com/profile.php?id=61555838731776" class="social-link">
                         <ion-icon name="logo-facebook"></ion-icon>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="social-link">
+                    <a href="https://www.instagram.com/marsille_travel_agency?igsh=YTZiaHRleGNlYjZi" class="social-link">
                         <ion-icon name="logo-instagram"></ion-icon>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-linkedin"></ion-icon>
+                    <a href="mailto:info@marsilletravel.com" class="social-link">
+                        <ion-icon name="mail-outline"></ion-icon>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-google"></ion-icon>
+                    <a href="tel:+971585584820" class="social-link">
+                        <ion-icon name="call-outline"></ion-icon>
                     </a>
                 </li>
+
             </ul>
 
         </div>
@@ -306,7 +308,72 @@
     <ion-icon name="chevron-up-outline"></ion-icon>
 </a>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyA-SRMGBB0KNd62h0EN8VtjlZuXAZ3Rt2g",
+        authDomain: "marsille-travel.firebaseapp.com",
+        databaseURL: "https://marsille-travel-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "marsille-travel",
+        storageBucket: "marsille-travel.appspot.com",
+        messagingSenderId: "613416398489",
+        appId: "1:613416398489:web:40d08ae6259041715dd208",
+        measurementId: "G-NS7Y7SLP0K"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+
+
+    //listen for submit event//(1)
+    document
+        .getElementById('registrationform')
+        .addEventListener('submit', formSubmit);
+
+    //Submit form(2)
+    function formSubmit(e) {
+        e.preventDefault();
+        // Get Values from the DOM
+        let name = document.querySelector('#name').value;
+        let email = document.querySelector('#email').value;
+        let phone = document.querySelector('#phone_number').value;
+        let message = document.querySelector('#message').value;
+
+        //send message values(3)
+        sendMessage(name, email, phone, message);
+    }
+
+    //Send Message to Firebase(4)
+    function sendMessage(name, email,phone,message) {
+        const database = getDatabase();
+
+        set(ref(database, 'users/' + Math.floor(Math.random() * 10000000)), {
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        }).then(() => {
+            //Show Alert Message(5)
+            document.querySelector('.alert').style.display = 'block';
+            //Hide Alert Message After Seven Seconds(6)
+            setTimeout(function () {
+                window.location.href='./index.html'
+            }, 3000);
+            document.getElementById('registrationform').reset();
+        }).catch((error) => {
+            alert(error)
+        })
+    }
+</script>
 <script src="./assets/js/script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -8,6 +8,12 @@
   font-weight: bold;
   src: url('../fonts/Bold.ttf');
 }
+.logo-footer{
+  width: 30%;
+}
+.logo-mobile{
+  display: none;
+}
 :root {
 
   --battleship-gray: hsl(0, 0%, 53%);
@@ -232,6 +238,7 @@ body {
   box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.1);
   border-radius: var(--radius-6);
   overflow: hidden;
+  height: 500px;
 }
 
 :is(.popular, .blog) .card-banner { position: relative; }
@@ -301,11 +308,6 @@ body {
   align-items: center;
 }
 
-.logo {
-  color: var(--white-1);
-  font-size: var(--fs-2);
-  font-weight: var(--fw-600);
-}
 
 .nav-toggle-btn.active .open,
 .nav-toggle-btn .close { display: none; }
@@ -323,6 +325,7 @@ body {
   width: 100%;
   padding: 20px 10px;
   opacity: 0;
+  justify-content: space-between;
   visibility: hidden;
   transition: var(--transition-1);
 }
@@ -653,7 +656,7 @@ body {
 \*-----------------------------------*/
 
 /**
- * responsive for larger than 575px screen 
+ * responsive for larger than 575px screen
  */
 
 @media (min-width: 575px) {
@@ -697,7 +700,7 @@ body {
 
 
 /**
- * responsive for larger than 768px screen 
+ * responsive for larger than 768px screen
  */
 
 @media (min-width: 768px) {
@@ -735,7 +738,7 @@ body {
     gap: 40px;
   }
 
-  
+
 
   /**
    * DESTINATION
@@ -769,6 +772,15 @@ body {
 
 
 @media (min-width: 992px) {
+  .logo-footer{
+    width: 70%;
+  }
+  .logo {
+    width: 30%;
+  }
+  nav div{
+    width: 33%;display: flex;justify-content: center
+  }
   .t-about{
     text-align: start;
   }
@@ -905,7 +917,7 @@ body {
 
 
 /**
- * responsive for larger than 1200px screen 
+ * responsive for larger than 1200px screen
  */
 
 @media (min-width: 1200px) {
@@ -952,6 +964,15 @@ body {
 
 }
 @media (max-width: 768px) {
+  .logo-mobile{
+    display: flex !important;
+  }
+  .logo-footer{
+    width: 30%;
+  }
+  .logo {
+    display: none;
+  }
   .t-about{
     text-align: center;
   }

@@ -13,16 +13,20 @@
             rel="stylesheet">
 </head>
 <style>
-
-
-
-
-
-
-
-
+    li{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 22px;
+        font-weight: 700;
+        font-family: var(--ff-abril-fatface);
+    }
+    span{
+        font-weight: 600;
+        font-size:18px;
+    }
 .heading {
-	font-family: "Montserrat", Arial, sans-serif;
 	font-size: 4rem;
 	font-weight: 500;
 	line-height: 1.5;
@@ -84,54 +88,63 @@ Remove or comment-out the code block below to see how the browser will fall-back
 		margin: 0;
 	}
 }
-
+    @media (max-width: 768px) {
+        .gallery{
+            grid-template-columns: repeat(1, minmax(24rem, 5fr));
+        }
+    }
 
 </style>
 
-<body id="top">
+<body id="top" style="font-family: 'travelFont' !important;">
 
-    <header class="header" data-header>
-      <div class="container">
-  
-        <a href="#">
-          <h1 class="logo">MarsilleTravel</h1>
-        </a>
-  
+
+<header class="header" data-header>
+    <div class="container">
+
         <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
-          <ion-icon name="menu-outline" class="open"></ion-icon>
-          <ion-icon name="close-outline" class="close"></ion-icon>
+            <ion-icon name="menu-outline" class="open"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
         </button>
-  
-        <nav class="navbar">
-  
-          <ul class="navbar-list">
-  
-            <li>
-              <a href="./index.html" class="navbar-link">Home</a>
-            </li>
-  
-            <li>
-              <a href="./about-us.html" class="navbar-link">About Us</a>
-            </li>
-  
-            <li>
-              <a href="#" class="navbar-link">Tours</a>
-            </li>
-  
-            <li>
-              <a href="./contact-us.html" class="navbar-link">Contact Us</a>
-            </li>
-  
-          </ul>
-        <a href="./ar/index.html"><img src="./assets/images/uae.png"></a>
-        </nav>
-  
-      </div>
-    </header>
-    
-    <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
 
-        <h1 style="display: flex;justify-content: start;" class="heading">Dubai, United Arab Emirates</h1> 
+        <nav class="navbar">
+            <div>
+                <a href="./index.html" dir="ltr">
+                    <img src="./assets/images/Logo.png" class="logo" alt="MarsilleTravel">
+                </a>
+            </div>
+            <div>
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="./index.html" class="navbar-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="./about-us.html" class="navbar-link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="./Tours.html" class="navbar-link">Tours</a>
+                    </li>
+
+                    <li>
+                        <a href="./contact-us.html" class="navbar-link">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div>
+                <a href="./ar/Tours.html"><img src="./assets/images/uae.png"></a>
+            </div>
+        </nav>
+
+    </div>
+</header>
+    
+    <div style="padding-bottom: 50px;padding-top: 50px;"  class="container " >
+
+        <h1 style="display: flex;justify-content: start;" class="heading" id="dubai">Dubai, United Arab Emirates</h1>
         <span style="padding-bottom: 40px;">
             Dubai is an emirate located in the United Arab Emirates, and is a city renowned for its beauty and splendor. Dubai is one of the most popular tourist destinations in the world, as it combines modern, historical, and cultural landmarks in one place.
             Dubai is distinguished by its stunning urban landscapes and magnificent architecture. Visitors can enjoy seeing many skyscrapers such as the Burj Khalifa, the tallest building in the world, and the Burj Al Arab, which is distinguished by its unique design and location on an artificial island.
@@ -175,7 +188,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
     <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
 
-        <h1 style="display: flex;justify-content: start;" class="heading">Thailand, Bangkok</h1> 
+        <h1 style="display: flex;justify-content: start;" class="heading" id="thailand">Thailand, Bangkok</h1>
         <span style="padding-bottom: 40px;">
   
 Thailand, the Land of Smiles, is one of the most enchanting and captivating destinations in Southeast Asia. This country is distinguished by its remarkable natural diversity and rich cultural heritage, making it one of the most popular and attractive destinations in the world.
@@ -224,7 +237,7 @@ Contact us today for more information about this wonderful trip and to book. Our
      
     <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
 
-        <h1 style="display: flex;justify-content: start;" class="heading">Georgia, Tbilisi</h1> 
+        <h1 style="display: flex;justify-content: start;" class="heading" id="georgia">Georgia, Tbilisi</h1>
         <span style="padding-bottom: 40px;">
            
         Tbilisi is a diverse and wonderful tourist destination that combines ancient history, rich culture, and stunning landscapes, making it a unique place for exploration and maximum enjoyment.
@@ -366,137 +379,134 @@ Contact us today for more information about this wonderful trip and to book. Our
     
     </div>
 
-    
-    
-    
-    
 
 
 
-    <footer class="footer" style="background-image: url('../assets/images/footer-bg.png')">
-        <div class="container">
-    
-            <div class="footer-top">
-    
-                <ul style="text-align: center;" class="footer-list">
-    
-                    <li>
-                        <p class="footer-list-title">Top Destination </p>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="footer-link">United Arab Emirates, Dubai</a>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="footer-link">Bangkok, Thailand</a>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="footer-link">Georgia, Tbilisi</a>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="footer-link">Azərbaycan, Baku</a>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="footer-link">Saudi Arabia, Makkah</a>
-                    </li>
-    
-                </ul>
-    
-    
-                <ul style="text-align: center;" class="footer-list">
-    
-                    <li>
-                        <p  class="footer-list-title"> Quick Links</p>
-                    </li>
-    
-                    <li>
-                        <a href="./about-us.html" class="footer-link">About Us</a>
-                    </li>
-    
-                    <li>
-                        <a href="./contact-us.html" class="footer-link">Contact Us</a>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="footer-link">Tours</a>
-                    </li>
-    
-    
-                </ul>
-    
-    
-                <ul class="footer-list">
-    
-                    <li>
-                        <p style="text-align: center;" class="footer-list-title">Our Vision</p>
-                    </li>
-    
-                    <li>
-                        <p style="text-align: center;   " > We strive to be Marseille Tourism and Travel's leader in our field and the first choice for those seeking unique travel experiences around the world.</p>
-                    </li>
-    
-    
-    
-                </ul>
-                <ul class="footer-list">
-    
-                    <li>
-                        <a style="text-align: center; padding-top: 50px;" href="#" class="logo">MarsilleTravel</a>
-                    </li>
-    
-                </ul>
-    
-    
-            </div>
-    
-    
-            <div class="footer-bottom">
-                <p class="copyright">
-                    All Rights Reserved
-                    &copy; 2024 <a href="#" class="copyright-link">AunakIT</a>
-                </p>
-    
-                <ul class="social-list">
-    
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-facebook"></ion-icon>
+
+
+
+
+<footer class="footer" style="background-image: url('../assets/images/footer-bg.png')">
+    <div class="container">
+
+        <div class="footer-top">
+
+            <ul style="text-align: center;" class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Top Destination </p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">United Arab Emirates, Dubai</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Bangkok, Thailand</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Georgia, Tbilisi</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Azərbaycan, Baku</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Saudi Arabia, Makkah</a>
+                </li>
+
+            </ul>
+
+
+            <ul style="text-align: center;" class="footer-list">
+
+                <li>
+                    <p  class="footer-list-title"> Quick Links</p>
+                </li>
+
+                <li>
+                    <a href="./about-us.html" class="footer-link">About Us</a>
+                </li>
+
+                <li>
+                    <a href="./contact-us.html" class="footer-link">Contact Us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Tours</a>
+                </li>
+
+
+            </ul>
+
+
+            <ul class="footer-list">
+
+                <li>
+                    <p style="text-align: center;" class="footer-list-title">Our Vision</p>
+                </li>
+
+                <li>
+                    <p style="text-align: center;" > We strive to be Marseille Tourism and Travel's leader in our field and the first choice for those seeking unique travel experiences around the world.</p>
+                </li>
+
+
+
+            </ul>
+            <ul class="footer-list">
+
+                <li>
+                    <div >
+                        <a href="./index.html" dir="ltr" style="display: flex;justify-content: center;align-items: center;padding-top: 20px">
+                            <img src="./assets/images/Logo.png" class="logo-footer" alt="MarsilleTravel">
                         </a>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-google"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-    
-            </div>
-    
+                    </div>
+                </li>
+
+            </ul>
+
+
         </div>
-    </footer>
+
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                All Rights Reserved
+                &copy; 2024 <a href="https://aunak.it" class="copyright-link">AunakIT</a>
+            </p>
+
+            <ul class="social-list">
+
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61555838731776" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/marsille_travel_agency?igsh=YTZiaHRleGNlYjZi" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:info@marsilletravel.com" class="social-link">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:+971585584820" class="social-link">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</footer>
     
       
   <script src="./assets/js/script.js"></script>

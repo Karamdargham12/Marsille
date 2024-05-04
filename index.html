@@ -21,21 +21,22 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#">
-        <h1 class="logo">MarsilleTravel</h1>
-      </a>
-
       <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
         <ion-icon name="menu-outline" class="open"></ion-icon>
         <ion-icon name="close-outline" class="close"></ion-icon>
       </button>
 
       <nav class="navbar">
-
+          <div>
+          <a href="./index.html" dir="ltr">
+              <img src="./assets/images/Logo.png" class="logo" alt="MarsilleTravel">
+          </a>
+      </div>
+       <div>
         <ul class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link">Home</a>
+            <a href="./index.html" class="navbar-link">Home</a>
           </li>
 
           <li>
@@ -51,7 +52,10 @@
           </li>
 
         </ul>
+       </div>
+          <div>
       <a href="./ar/index.html"><img src="./assets/images/uae.png"></a>
+          </div>
       </nav>
 
     </div>
@@ -197,142 +201,120 @@
           <p class="section-subtitle">Featured Tours</p>
 
           <h2 class="h2 section-title">Most Popular Tours</h2>
+                    <ul class="popular-list">
 
-          <ul class="popular-list">
+                        <li>
+                            <div class="popular-card">
 
-            <li>
-              <div class="popular-card">
+                                <figure class="card-banner">
+                                    <a href="./Tours.html#dubai">
+                                        <img src="./assets/images/dubai2.jpg" width="740" height="518" loading="lazy"
+                                             alt="Dubai" class="img-cover">
+                                    </a>
 
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
-                      alt="Kuala Lumpur, Malaysia" class="img-cover">
-                  </a>
+                                </figure>
 
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
+                                <div class="card-content">
 
-                    <time datetime="P12D">12 Days</time>
-                  </span>
-                </figure>
+                                    <div class="card-wrapper">
 
-                <div class="card-content">
+                                        <div class="card-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
 
-                  <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
+                                            <data value="4">(4)</data>
+                                        </div>
+                                    </div>
 
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star-outline"></ion-icon>
+                                    <h3 class="card-title">
+                                        <a href="./Tours.html#dubai">Dubai is an emirate located in the United Arab Emirates</a>
+                                    </h3>
 
-                      <data value="2">(2)</data>
-                    </div>
-                  </div>
+                                    <address class="card-location">Dubai, United Arab Emirates</address>
 
-                  <h3 class="card-title">
-                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, odit?</a>
-                  </h3>
+                                </div>
 
-                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+                            </div>
+                        </li>
 
-                </div>
+                        <li>
+                            <div class="popular-card">
 
-              </div>
-            </li>
+                                <figure class="card-banner">
+                                    <a href="./Tours.html#georgia">
+                                        <img src="./assets/images/Georgia3.jpg" width="740" height="518" loading="lazy"
+                                             alt="Georgia" class="img-cover">
+                                    </a>
+                                </figure>
 
-            <li>
-              <div class="popular-card">
+                                <div class="card-content">
 
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/popular-2.jpg" width="740" height="518" loading="lazy"
-                      alt="Kuala Lumpur, Malaysia" class="img-cover">
-                  </a>
+                                    <div class="card-wrapper">
 
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
+                                        <div class="card-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
 
-                    <time datetime="P12D">12 Days</time>
-                  </span>
-                </figure>
+                                            <data value="4">(4)</data>
+                                        </div>
+                                    </div>
 
-                <div class="card-content">
+                                    <h3 class="card-title">
+                                        <a href="./Tours.html#georgia">Tbilisi is a diverse and wonderful tourist destination that combines ancient history</a>
+                                    </h3>
 
-                  <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
+                                    <address class="card-location">Tbilisi, Georgia</address>
 
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star-outline"></ion-icon>
+                                </div>
 
-                      <data value="2">(2)</data>
-                    </div>
-                  </div>
+                            </div>
+                        </li>
 
-                  <h3 class="card-title">
-                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, odit?</a>
-                  </h3>
+                        <li>
+                            <div class="popular-card">
 
-                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+                                <figure class="card-banner">
+                                    <a href="./Tours.html#thailand">
+                                        <img src="./assets/images/Thailand1.jpg" width="740" height="518" loading="lazy"
+                                             alt="Thailand" class="img-cover">
+                                    </a>
+                                </figure>
 
-                </div>
+                                <div class="card-content">
 
-              </div>
-            </li>
+                                    <div class="card-wrapper">
+                                        <div class="card-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
 
-            <li>
-              <div class="popular-card">
+                                            <data value="4">(4)</data>
+                                        </div>
+                                    </div>
 
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/popular-3.jpg" width="740" height="518" loading="lazy"
-                      alt="Kuala Lumpur, Malaysia" class="img-cover">
-                  </a>
+                                    <h3 class="card-title">
+                                        <a href="./Tours.html#thailand">Thailand, the Land of Smiles, is one of the most enchanting and captivating destinations in Southeast Asia</a>
+                                    </h3>
 
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
+                                    <address class="card-location">Bangkok, Thailand</address>
 
-                    <time datetime="P12D">12 Days</time>
-                  </span>
-                </figure>
+                                </div>
 
-                <div class="card-content">
+                            </div>
+                        </li>
 
-                  <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star-outline"></ion-icon>
-
-                      <data value="2">(2)</data>
-                    </div>
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, odit?</a>
-                  </h3>
-
-                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+                    </ul>
 
                 </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
+            </section>
 
 
 
@@ -353,7 +335,7 @@
           </div>
 
           <figure class="about-banner" style="height: 100%;">
-            <img src="./assets/images/about-banner.png" width="756" height="842" loading="lazy" alt="" class="w-100">
+            <img src="./assets/images/marsille.jpg" width="756" height="842" loading="lazy" alt="" class="w-100">
           </figure>
 
         </div>
@@ -551,7 +533,11 @@
               <ul class="footer-list">
 
                   <li>
-                      <a style="text-align: center; padding-top: 50px;" href="#" class="logo">MarsilleTravel</a>
+                      <div >
+                          <a href="./index.html" dir="ltr" style="display: flex;justify-content: center;align-items: center;padding-top: 20px">
+                              <img src="./assets/images/Logo.png" class="logo-footer" alt="MarsilleTravel">
+                          </a>
+                      </div>
                   </li>
 
               </ul>
@@ -563,40 +549,33 @@
           <div class="footer-bottom">
               <p class="copyright">
                   All Rights Reserved
-                  &copy; 2024 <a href="#" class="copyright-link">AunakIT</a>
+                  &copy; 2024 <a href="https://aunak.it" class="copyright-link">AunakIT</a>
               </p>
 
               <ul class="social-list">
 
                   <li>
-                      <a href="#" class="social-link">
+                      <a href="https://www.facebook.com/profile.php?id=61555838731776" class="social-link">
                           <ion-icon name="logo-facebook"></ion-icon>
                       </a>
                   </li>
-
                   <li>
-                      <a href="#" class="social-link">
-                          <ion-icon name="logo-twitter"></ion-icon>
-                      </a>
-                  </li>
-
-                  <li>
-                      <a href="#" class="social-link">
+                      <a href="https://www.instagram.com/marsille_travel_agency?igsh=YTZiaHRleGNlYjZi" class="social-link">
                           <ion-icon name="logo-instagram"></ion-icon>
                       </a>
                   </li>
-
                   <li>
-                      <a href="#" class="social-link">
-                          <ion-icon name="logo-linkedin"></ion-icon>
+                      <a href="mailto:info@marsilletravel.com" class="social-link">
+                          <ion-icon name="mail-outline"></ion-icon>
                       </a>
                   </li>
 
                   <li>
-                      <a href="#" class="social-link">
-                          <ion-icon name="logo-google"></ion-icon>
+                      <a href="tel:+971585584820" class="social-link">
+                          <ion-icon name="call-outline"></ion-icon>
                       </a>
                   </li>
+
               </ul>
 
           </div>

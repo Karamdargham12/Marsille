@@ -24,7 +24,6 @@
 
 
     .heading {
-        font-family: "Montserrat", Arial, sans-serif;
         font-size: 4rem;
         font-weight: 500;
         line-height: 1.5;
@@ -86,7 +85,11 @@
             margin: 0;
         }
     }
-    
+    @media (max-width: 768px) {
+        .gallery{
+            grid-template-columns: repeat(1, minmax(24rem, 5fr));
+        }
+    }
     
     </style>
 
@@ -95,37 +98,40 @@
 <header class="header" data-header dir="ltr">
     <div class="container">
 
-        <a href="../ar/index.html" >
-            <h1 class="logo">MarsilleTravel</h1>
-        </a>
-
         <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
             <ion-icon name="menu-outline" class="open"></ion-icon>
             <ion-icon name="close-outline" class="close"></ion-icon>
         </button>
-
         <nav class="navbar">
+            <div>
+                <a href="../ar/index.html" dir="ltr">
+                    <img src="../assets/images/Logo.png" class="logo" alt="MarsilleTravel">
+                </a>
+            </div>
+            <div>
+                <ul class="navbar-list"  dir="rtl">
 
-            <ul class="navbar-list"  dir="rtl">
+                    <li>
+                        <a href="./index.html" class="navbar-link">الصفحة الرئيسية</a>
+                    </li>
 
-                <li>
-                    <a href="../ar/index.html" class="navbar-link">الصفحة الرئيسية</a>
-                </li>
+                    <li>
+                        <a href="../ar/about-us.html" class="navbar-link">حول</a>
+                    </li>
 
-                <li>
-                    <a href="../ar/about-us.html" class="navbar-link">حول</a>
-                </li>
+                    <li>
+                        <a href="../ar/Tours.html" class="navbar-link">رحلاتنا</a>
+                    </li>
 
-                <li>
-                    <a href="#" class="navbar-link">رحلاتنا</a>
-                </li>
+                    <li>
+                        <a href="./contact-us.html" class="navbar-link">تواصل</a>
+                    </li>
 
-                <li>
-                    <a href="./contact-us.html" class="navbar-link">تواصل</a>
-                </li>
-
-            </ul>
-            <a dir="ltr" href="../index.html"><img src="../assets/images/usa.png"></a>
+                </ul>
+            </div>
+            <div>
+                <a dir="ltr" href="../Tours.html"><img src="../assets/images/usa.png"></a>
+            </div>
         </nav>
 
     </div>
@@ -135,7 +141,7 @@
     
     <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
 
-        <h1 style="display: flex;justify-content: start;" class="heading">الإمارات العربية المتحدة، دبي</h1> 
+        <h1 style="display: flex;justify-content: start;" id="dubai" class="heading">الإمارات العربية المتحدة، دبي</h1>
         <span style="padding-bottom: 40px;">
             دبي هي إمارة تقع في دولة الإمارات العربية المتحدة، وهي مدينة تشتهر بجمالها وروعتها. تعد دبي واحدة من أكثر الوجهات السياحية شهرة في العالم، حيث تجمع بين المعالم الحديثة والتاريخية والثقافية في مكان واحد.
             تتميز دبي بمشاهدها الحضارية المذهلة والمعمار الرائع. يمكن للزوار الاستمتاع برؤية العديد من الأبراج الشاهقة مثل برج خليفة، وهو أطول برج في العالم، وبرج العرب، الذي يتميز بتصميمه الفريد وموقعه على جزيرة اصطناعية.
@@ -147,31 +153,31 @@
             
             </span>
         <div class="gallery">
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                <img class="gallery-image" src="../assets/images/dubai11.jpg" alt="Dubai, United Arab Emirates">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+                <img class="gallery-image" src="../assets/images/dubai2.jpg" alt="Dubai, United Arab Emirates">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+                <img class="gallery-image" src="../assets/images/dubai9.jpg" alt="Dubai, United Arab Emirates">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+                <img class="gallery-image" src="../assets/images/dubai1.jpg" alt="Dubai, United Arab Emirates">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+                <img class="gallery-image" src="../assets/images/dubai3.jpg" alt="Dubai, United Arab Emirates">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                <img class="gallery-image" src="../assets/images/dubai10.jpg" alt="Dubai, United Arab Emirates">
             </div>
-    
+
         </div>
     
     </div>
@@ -179,7 +185,7 @@
 
     <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
 
-        <h1 style="display: flex;justify-content: start;" class="heading">تايلاند، بانكوك</h1> 
+        <h1 style="display: flex;justify-content: start;" class="heading" id="thailand">تايلاند، بانكوك</h1>
         <span style="padding-bottom: 40px;">
   
             تايلاند، بلد الابتسامات، يعتبر واحداً من الوجهات الساحرة والمذهلة في جنوب شرق آسيا. تتميز هذه البلاد بتنوع طبيعي رائع وتراث ثقافي غني، مما يجعلها واحدة من أكثر الوجهات شهرة وجذباً في العالم.
@@ -196,31 +202,31 @@
 
             </span>
         <div class="gallery">
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                <img class="gallery-image" src="../assets/images/Thailand1.jpg" alt="Thailand, Bangkok">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+                <img class="gallery-image" src="../assets/images/Thailand2.jpg" alt="Thailand, Bangkok">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+                <img class="gallery-image" src="../assets/images/Thailand3.jpg" alt="Thailand, Bangkok">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+                <img class="gallery-image" src="../assets/images/Thailand4.jpg" alt="Thailand, Bangkok">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+                <img class="gallery-image" src="../assets/images/Thailand5.jpg" alt="Thailand, Bangkok">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                <img class="gallery-image" src="../assets/images/Thailand6.jpg" alt="Thailand, Bangkok">
             </div>
-    
+
         </div>
     
     </div>
@@ -228,7 +234,7 @@
      
     <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
 
-        <h1 style="display: flex;justify-content: start;" class="heading">جورجيا، تبليسي</h1> 
+        <h1 style="display: flex;justify-content: start;" class="heading" id="georgia">جورجيا، تبليسي</h1>
         <span style="padding-bottom: 40px;">
            
             تعتبر تبليسي وجهة سياحية متنوعة ورائعة تجمع بين التاريخ العريق والثقافة الغنية والمناظر الطبيعية الخلابة، ومكاناً مميزاً للاستكشاف وتحقيق أقصى درجة من المتعة.
@@ -246,34 +252,79 @@
 
             </span>
         <div class="gallery">
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                <img class="gallery-image" src="../assets/images/Georgia1.jpg" alt="Georgia, Tbilisi">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+                <img class="gallery-image" src="../assets/images/Georgia2.jpg" alt="Georgia, Tbilisi">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+                <img class="gallery-image" src="../assets/images/Georgia3.jpg" alt="Georgia, Tbilisi">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+                <img class="gallery-image" src="../assets/images/Georgia4.jpg" alt="Georgia, Tbilisi">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+                <img class="gallery-image" src="../assets/images/Georgia5.jpg" alt="Georgia, Tbilisi">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                <img class="gallery-image" src="../assets/images/Georgia6.jpg" alt="Georgia, Tbilisi">
             </div>
-    
+
         </div>
     
     </div>
+<div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
+
+    <h1 style="display: flex;justify-content: start;" class="heading">المملكة العربية السعودية، مكة</h1>
+    <span style="padding-bottom: 40px;">
+
+            تعتبر مكة المكرمة مقصداً دينياً عظيماً ومركزاً حضارياً ذو أهمية عالمية، لذلك تدعو شركة مارسيليا للسياحة والسفر عملاءها الكرام للقيام بتجربة استثنائية إلى واحدة من أروع الوجهات في المملكة العربية السعودية، مكة المكرمة. تتميز مكة المكرمة بالمناظر الطبيعية الخلابة والأماكن المقدسة التي تجذب الملايين من الزوار سنوياً.
+            أُولى وجهاتنا ستكون إلى الحرم المكي الشريف والقيام بالعمرة أو الحج والتجول في ساحاته الشاسعة، والمسجد الحرام الذي يعتبر أكبر مسجد في العالم. يمكنك أيضاً زيارة جبل النور ومغارة حراء للاستمتاع بالأجواء الروحية والمشاهد الخلابة.
+
+            بالإضافة إلى الأماكن المقدسة، تحتضن مكة العديد من المعالم الثقافية والتاريخية. حيث ستتمكّن من زيارة متحف مكة واستكشاف مجموعة متنوعة من المعروضات التي تسلط الضوء على التاريخ والثقافة المحلية. ومن ثم ستنتقل إلى زيارة سوق زهرة العباس والتجول في الأزقة الضيقة وشراء الحرف اليدوية والتحف التذكارية.
+
+            تعتبر مكة أيضاً مكاناً مثالياً لتذوق المأكولات السعودية الشهية. حيث يمكنك تجربة تشكيلة واسعة من الأطباق العربية اللذيذة في المطاعم والمقاهي المحلية، مثل الكبسة والمنسف والمأكولات الشعبية الأخرى التي تعكس تراث المنطقة.
+
+            بالإضافة إلى ذلك يمكنكم طلب تحويل هذه الرحلة إلى رحلة خاصة، والقيام بالتعديلات المناسبة على برنامجها لتتناسب مع تطلعاتكم.
+
+            تواصلوا معنا اليوم للحصول على المزيد من المعلومات حول هذه الرحلة الرائعة والحجز. فريقنا المتخصص سيكون سعيداً بتقديم الدعم والمساعدة لكم في تحقيق هذه التجربة الاستثنائ
+            </span>
+    <div class="gallery">
+
+        <div  class="gallery-item">
+            <img class="gallery-image" src="../assets/images/Makkah1.jpg" alt="Saudi Arabia, Makkah">
+        </div>
+
+        <div  class="gallery-item">
+            <img class="gallery-image" src="../assets/images/Makkah2.jpg" alt="Saudi Arabia, Makkah">
+        </div>
+
+        <div  class="gallery-item">
+            <img class="gallery-image" src="../assets/images/Makkah3.jpg" alt="Saudi Arabia, Makkah">
+        </div>
+
+        <div  class="gallery-item">
+            <img class="gallery-image" src="../assets/images/Makkah4.jpg" alt="Saudi Arabia, Makkah">
+        </div>
+
+        <div   class="gallery-item">
+            <img class="gallery-image" src="../assets/images/Makkah5.jpg" alt="Saudi Arabia, Makkah">
+        </div>
+
+        <div class="gallery-item">
+            <img class="gallery-image" src="../assets/images/Makkah.jpg" alt="Saudi Arabia, Makkah">
+        </div>
+
+    </div>
+
+</div>
     <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
 
         <h1 style="display: flex;justify-content: start;" class="heading">أذربيجان، باكو</h1> 
@@ -294,80 +345,37 @@
 
             </span>
         <div class="gallery">
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                <img class="gallery-image" src="../assets/images/Azerbaijan1.jpg" alt="Azerbaijan, Baku">
             </div>
-    
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+                <img class="gallery-image" src="../assets/images/Azerbaijan2.jpg" alt="Azerbaijan, Baku">
             </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+
+            <div  class="gallery-item">
+                <img class="gallery-image" src="../assets/images/Azerbaijan3.webp" alt="Azerbaijan, Baku">
             </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+
+            <div style="height: 70%;!mportant" class="gallery-item">
+                <img class="gallery-image" src="../assets/images/Azerbaijan4.jpg" alt="Azerbaijan, Baku">
             </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+
+            <div style="height: 70%;!mportant" class="gallery-item">
+                <img class="gallery-image" src="../assets/images/Azerbaijan5.jpg" alt="Azerbaijan, Baku">
             </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+
+            <div style="height: 70%;!mportant"  class="gallery-item">
+                <img class="gallery-image" src="../assets/images/Azerbaijian6.jpg" alt="Azerbaijan, Baku">
             </div>
-    
+
         </div>
     
     </div>
 
-    <div style="padding-bottom: 50px;padding-top: 50px;"  class="container ">
 
-        <h1 style="display: flex;justify-content: start;" class="heading">المملكة العربية السعودية، مكة</h1> 
-        <span style="padding-bottom: 40px;">
-           
-            تعتبر مكة المكرمة مقصداً دينياً عظيماً ومركزاً حضارياً ذو أهمية عالمية، لذلك تدعو شركة مارسيليا للسياحة والسفر عملاءها الكرام للقيام بتجربة استثنائية إلى واحدة من أروع الوجهات في المملكة العربية السعودية، مكة المكرمة. تتميز مكة المكرمة بالمناظر الطبيعية الخلابة والأماكن المقدسة التي تجذب الملايين من الزوار سنوياً. 
-            أُولى وجهاتنا ستكون إلى الحرم المكي الشريف والقيام بالعمرة أو الحج والتجول في ساحاته الشاسعة، والمسجد الحرام الذي يعتبر أكبر مسجد في العالم. يمكنك أيضاً زيارة جبل النور ومغارة حراء للاستمتاع بالأجواء الروحية والمشاهد الخلابة.
-            
-            بالإضافة إلى الأماكن المقدسة، تحتضن مكة العديد من المعالم الثقافية والتاريخية. حيث ستتمكّن من زيارة متحف مكة واستكشاف مجموعة متنوعة من المعروضات التي تسلط الضوء على التاريخ والثقافة المحلية. ومن ثم ستنتقل إلى زيارة سوق زهرة العباس والتجول في الأزقة الضيقة وشراء الحرف اليدوية والتحف التذكارية.
-            
-            تعتبر مكة أيضاً مكاناً مثالياً لتذوق المأكولات السعودية الشهية. حيث يمكنك تجربة تشكيلة واسعة من الأطباق العربية اللذيذة في المطاعم والمقاهي المحلية، مثل الكبسة والمنسف والمأكولات الشعبية الأخرى التي تعكس تراث المنطقة.
-            
-            بالإضافة إلى ذلك يمكنكم طلب تحويل هذه الرحلة إلى رحلة خاصة، والقيام بالتعديلات المناسبة على برنامجها لتتناسب مع تطلعاتكم.
-            
-            تواصلوا معنا اليوم للحصول على المزيد من المعلومات حول هذه الرحلة الرائعة والحجز. فريقنا المتخصص سيكون سعيداً بتقديم الدعم والمساعدة لكم في تحقيق هذه التجربة الاستثنائ
-            </span>
-        <div class="gallery">
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
-            </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
-            </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
-            </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
-            </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
-            </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-            </div>
-    
-        </div>
-    
-    </div>
+
 
 
 
@@ -452,7 +460,11 @@
             <ul class="footer-list">
 
                 <li>
-                    <a style="text-align: center; padding-top: 50px;" href="#" class="logo">MarsilleTravel</a>
+                    <div >
+                        <a href="../ar/index.html" dir="ltr" style="display: flex;justify-content: center;align-items: center;padding-top: 20px">
+                            <img src="../assets/images/Logo.png" class="logo-footer" alt="MarsilleTravel">
+                        </a>
+                    </div>
                 </li>
 
             </ul>
@@ -464,40 +476,33 @@
         <div class="footer-bottom">
             <p class="copyright">
                 جميع الحقوق محفوظة
-                &copy; 2024 <a href="#" class="copyright-link">AunakIT</a>
+                &copy; 2024 <a href="https://aunak.it/" class="copyright-link">AunakIT</a>
             </p>
 
             <ul class="social-list">
 
                 <li>
-                    <a href="#" class="social-link">
+                    <a href="https://www.facebook.com/profile.php?id=61555838731776" class="social-link">
                         <ion-icon name="logo-facebook"></ion-icon>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="social-link">
+                    <a href="https://www.instagram.com/marsille_travel_agency?igsh=YTZiaHRleGNlYjZi" class="social-link">
                         <ion-icon name="logo-instagram"></ion-icon>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-linkedin"></ion-icon>
+                    <a href="mailto:info@marsilletravel.com" class="social-link">
+                        <ion-icon name="mail-outline"></ion-icon>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-google"></ion-icon>
+                    <a href="tel:+971585584820" class="social-link">
+                        <ion-icon name="call-outline"></ion-icon>
                     </a>
                 </li>
+
             </ul>
 
         </div>

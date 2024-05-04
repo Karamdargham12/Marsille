@@ -13,41 +13,44 @@
             href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
             rel="stylesheet">
 </head>
-<body dir="rtl" id="top" style="font-family: 'travelFont' !important;font-weight: 900">
+<body dir="rtl" id="top" style="font-family: 'travelFont' !important;font-weight: 900;background: linear-gradient(180deg, white, #029d9d52);">
 <header class="header" data-header dir="ltr">
     <div class="container">
-
-        <a href="../ar/index.html" >
-            <h1 class="logo">MarssileTravel</h1>
-        </a>
 
         <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
             <ion-icon name="menu-outline" class="open"></ion-icon>
             <ion-icon name="close-outline" class="close"></ion-icon>
         </button>
-
         <nav class="navbar">
+            <div>
+                <a href="../ar/index.html" dir="ltr">
+                    <img src="../assets/images/Logo.png" class="logo" alt="MarsilleTravel">
+                </a>
+            </div>
+            <div>
+                <ul class="navbar-list"  dir="rtl">
 
-            <ul class="navbar-list"  dir="rtl">
+                    <li>
+                        <a href="./index.html" class="navbar-link">الصفحة الرئيسية</a>
+                    </li>
 
-                <li>
-                    <a href="../ar/index.html" class="navbar-link">الصفحة الرئيسية</a>
-                </li>
+                    <li>
+                        <a href="../ar/about-us.html" class="navbar-link">حول</a>
+                    </li>
 
-                <li>
-                    <a href="../ar/about-us.html" class="navbar-link">حول</a>
-                </li>
+                    <li>
+                        <a href="../ar/Tours.html" class="navbar-link">رحلاتنا</a>
+                    </li>
 
-                <li>
-                    <a href="../ar/Tours.html" class="navbar-link">رحلاتنا</a>
-                </li>
+                    <li>
+                        <a href="./contact-us.html" class="navbar-link">تواصل</a>
+                    </li>
 
-                <li>
-                    <a href="contact-us.html" class="navbar-link">تواصل</a>
-                </li>
-
-            </ul>
-            <a dir="ltr" href="../about-us.html"><img src="../assets/images/usa.png"></a>
+                </ul>
+            </div>
+            <div>
+                <a dir="ltr" href="../about-us.html"><img src="../assets/images/usa.png"></a>
+            </div>
         </nav>
 
     </div>
@@ -80,6 +83,7 @@
         <li style="list-style: disc;padding-top: 10px">وكيل معتمد لشركة فلاي ناس وAir Arabia</li>
     </ul>
 </div>
+
 
 
 
@@ -159,7 +163,11 @@
             <ul class="footer-list">
 
                 <li>
-                    <a style="text-align: center; padding-top: 50px;" href="#" class="logo">MarsilleTravel</a>
+                    <div >
+                        <a href="../ar/index.html" dir="ltr" style="display: flex;justify-content: center;align-items: center;padding-top: 20px">
+                            <img src="../assets/images/Logo.png" class="logo-footer" alt="MarsilleTravel">
+                        </a>
+                    </div>
                 </li>
 
             </ul>
@@ -171,40 +179,33 @@
         <div class="footer-bottom">
             <p class="copyright">
                 جميع الحقوق محفوظة
-                &copy; 2024 <a href="#" class="copyright-link">AunakIT</a>
+                &copy; 2024 <a href="https://aunak.it/" class="copyright-link">AunakIT</a>
             </p>
 
             <ul class="social-list">
 
                 <li>
-                    <a href="#" class="social-link">
+                    <a href="https://www.facebook.com/profile.php?id=61555838731776" class="social-link">
                         <ion-icon name="logo-facebook"></ion-icon>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="social-link">
+                    <a href="https://www.instagram.com/marsille_travel_agency?igsh=YTZiaHRleGNlYjZi" class="social-link">
                         <ion-icon name="logo-instagram"></ion-icon>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-linkedin"></ion-icon>
+                    <a href="mailto:info@marsilletravel.com" class="social-link">
+                        <ion-icon name="mail-outline"></ion-icon>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-google"></ion-icon>
+                    <a href="tel:+971585584820" class="social-link">
+                        <ion-icon name="call-outline"></ion-icon>
                     </a>
                 </li>
+
             </ul>
 
         </div>
