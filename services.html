@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marsille Travel</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        .visa-section{
+            display: grid !important;grid-template-columns: 1fr 1fr ;
+        }
+        .grid{ grid-template-columns: 1fr 1fr ; }
+        .griy { grid-template-columns: 1fr 1fr 1fr ; }
+        .about-item{
+            width: 420px !important;
+        }
+        .about-item-icon{
+            justify-content: start !important;
+            width: 400px !important;
+        }
+        .grid1{ grid-template-columns: 1fr 1fr ; }
+        @media (max-width:900px) {
+            .visa-section{
+            grid-template-columns: 1fr ;
+        }
+        .visa-section img{
+           padding-top: 30px;
+        }
+        }
+  
+    </style>
+</head>
+
+<body id="top">
+
+    <header class="header" data-header>
+      <div class="container">
+  
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <ion-icon name="menu-outline" class="open"></ion-icon>
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+  
+        <nav class="navbar">
+            <div>
+            <a href="./index.html" dir="ltr">
+                <img src="./assets/images/Logo.png" class="logo" alt="MarsilleTravel">
+            </a>
+        </div>
+         <div>
+          <ul class="navbar-list">
+  
+            <li>
+              <a href="./index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+                <a href="#" class="navbar-link">Services</a>
+            </li>
+  
+            <li>
+              <a href="./about-us.html" class="navbar-link">About Us</a>
+            </li>
+  
+            <li>
+              <a href="./Tours.html" class="navbar-link">Tours</a>
+            </li>
+  
+            <li>
+              <a href="./contact-us.html" class="navbar-link">Contact Us</a>
+            </li>
+        
+  
+          </ul>
+         </div>
+            <div>
+        <a href="./ar/index.html"><img src="./assets/images/uae.png"></a>
+            </div>
+        </nav>
+  
+      </div>
+    </header>
+
+<div style="padding-top:50px;">
+    <p style="font-family: var(--ff-comforter-brush); color: var(--mikado-yellow);font-size: var(--fs-3); text-align: center ;padding-top: 40px!important; "  class="section-subtitle">Our Services</p>
+    <h2 style="color: var(--jet);font-size: var(--fs-3);font-weight: var(--fw-500); font-family: var(--ff-abril-fatface); text-align: center !important" class="h2 section-title">A comprehensive list</h2>
+    <p class="container"  style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7; text-align: center; padding-top: 30px !important;">
+      It is our endeavor to provide end-to-end travel solutions to our partners and their clients. Be it FIT, family travel, leisure groups, business
+      .travel or event management, we leave no stone unturned in being your one-stop solution providers in the destinations we manage
+    </p>
+</div>
+<div style="padding-top: 40px;">
+    <div class="grid container" >
+        <div style="display: flex;justify-content: center">
+    
+                <div style="margin-right: 20px;" >
+               <img style="width: 100%; height: 100%;" src="./assets/images/toy-airplane-laptop-keyboard-with-globe-camera (1) (1).jpg">
+                </div>
+                <div  >
+               <img style="width: 100%; " src="./assets/images/close-up-people-holding-map.jpg">
+                </div>
+          </div>
+    </div>
+</div>
+
+<div style="display: flex;justify-content: center">
+    <ul class="about-list-2 ">
+
+
+      <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Business Travel Management</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 15px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Corporate Travel Solutions</span></div>
+        </div>
+    </li>
+
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Group Travel & Trade Missions</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 70px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Luxury Leisure Travel</span></div>
+        </div>
+    </li>
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Global Travel Solutions</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Marine & Energy Divisions</span></div>
+        </div>
+    </li>
+    
+    </ul>
+  </div>
+
+  
+<div style="display: flex;justify-content: center">
+    <ul class="about-list-2 ">
+
+
+      <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-5);line-height: 1.7 !important">Flights:Economy,Business,First Class</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Executive Aircrat Charter</span></div>
+        </div>
+    </li>
+
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Meet & Assist Services</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Car Rental</span></div>
+        </div>
+    </li>
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Hotel Bookings:Independent&Chains</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Eurostar, Rail&Ferry</span></div>
+        </div>
+    </li>
+    
+    </ul>
+  </div>
+
+  <div style="display: flex;justify-content: center">
+    <ul class="about-list-2 ">
+
+
+      <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Transfers</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 15px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Full Inbound&Outbound Bundled Packages </span></div>
+        </div>
+    </li>
+
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Business Travel Insurance</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 70px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Visa Applications</span></div>
+        </div>
+    </li>
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Chauffer Services</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Travel Packages</span></div>
+        </div>
+    </li>
+    
+    </ul>
+  </div>
+  <div style="display: flex;justify-content: center">
+    <ul class="about-list-2 ">
+
+
+      <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Online Booking</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 15px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Dedicated Account Management </span></div>
+        </div>
+    </li>
+
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important"> Team Building activities ,Trips</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 70px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Senior Travel Consultant</span></div>
+        </div>
+    </li>
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Travel Alerts</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Promotions</span></div>
+        </div>
+    </li>
+    
+    </ul>
+  </div>
+  <div style="display: flex;justify-content: center">
+    <ul class="about-list-2 ">
+
+
+      <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Desert Safari</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 15px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Dhow Cruise & Much More </span></div>
+        </div>
+    </li>
+
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Business Travel Insurance</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 70px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Visa Applications</span></div>
+        </div>
+    </li>
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Chauffer Services</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Travel Packages</span></div>
+        </div>
+    </li>
+    
+    </ul>
+  </div>
+  <div style="display: flex;justify-content: center">
+    <ul class="about-list-2 ">
+
+
+      <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Promotions</span></div>
+        </div>
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 15px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Desert Safari </span></div>
+        </div>
+    </li>
+    <li class="about-item">
+
+        <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Dhow Cruise & Much More</span></div>
+        </div>
+      
+    </li>
+
+    
+   
+    
+    </ul>
+  </div>
+
+  
+<div>
+
+      </div>
+
+
+
+<div>
+    
+
+    <div style="padding-top: 50px;margin-bottom: 50px;">
+        <div class="  container" >
+            <div class="visa-section">
+        
+                    <div >
+                        <p style="font-family: var(--ff-comforter-brush); color: var(--mikado-yellow);font-size: var(--fs-3); text-align: center ;padding-top: 40px!important; "  class="section-subtitle">country Of</p>
+                        <h2 style="color: var(--jet);font-size: var(--fs-3);font-weight: var(--fw-500); font-family: var(--ff-abril-fatface); text-align: center !important" class="h2 section-title">Visa Service</h2>
+                        <p class="container"  style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7; text-align: center; padding-top: 30px !important;">
+             UAE Visa ,Schengen Visa File Process, USA Tourist Visa File Process,UK Tourist Visa File Process, Canada Tourist Visa File Process, India Visa, Malaysia E Visa, Thailand Visa, Singapore Visa, Vietnam Sticker Visa, Vietnam Visa Approval, China Visa File process, Egypt Visa File process, Turkey Visa File process, Australia Tourist Visa File Process, Keneya E Visa. 
+                        </p>
+                    </div>
+                   
+                   <img style="width: 100%; " src="./assets/images/visa-01.png " >
+                  
+              </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer" style="background-image: url('../assets/images/footer-bg.png')">
+    <div class="container">
+
+        <div class="footer-top">
+
+            <ul style="text-align: center;" class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Top Destination </p>
+                </li>
+
+                <li>
+                    <a href="./Tours.html#dubai" class="footer-link">United Arab Emirates, Dubai</a>
+                </li>
+
+                <li>
+                    <a href="./Tours.html#thailand" class="footer-link">Bangkok, Thailand</a>
+                </li>
+
+                <li>
+                    <a href="./Tours.html#georgia" class="footer-link">Georgia, Tbilisi</a>
+                </li>
+
+                <li>
+                    <a href="./Tours.html#azarbijan" class="footer-link">Azərbaycan, Baku</a>
+                </li>
+
+                <li>
+                    <a href="./Tours.html#saudi" class="footer-link">Saudi Arabia, Makkah</a>
+                </li>
+
+            </ul>
+
+
+            <ul style="text-align: center;" class="footer-list">
+
+                <li>
+                    <p  class="footer-list-title"> Quick Links</p>
+                </li>
+
+                <li>
+                    <a href="./about-us.html" class="footer-link">About Us</a>
+                </li>
+
+                <li>
+                    <a href="./contact-us.html" class="footer-link">Contact Us</a>
+                </li>
+
+                <li>
+                    <a href="./Tours.html" class="footer-link">Tours</a>
+                </li>
+
+
+            </ul>
+
+
+            <ul class="footer-list">
+
+                <li>
+                    <p style="text-align: center;" class="footer-list-title">Our Vision</p>
+                </li>
+
+                <li>
+                    <p style="text-align: center;" > We strive to be Marseille Tourism and Travel's leader in our field and the first choice for those seeking unique travel experiences around the world.</p>
+                </li>
+
+
+
+            </ul>
+            <ul class="footer-list">
+
+                <li>
+                    <div >
+                        <a href="./index.html" dir="ltr" style="display: flex;justify-content: center;align-items: center;padding-top: 20px">
+                            <img src="./assets/images/Logo.png" class="logo-footer" alt="MarsilleTravel">
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                All Rights Reserved
+                &copy; 2024 <a href="https://aunak.it" class="copyright-link">AunakIT</a>
+            </p>
+
+            <ul class="social-list">
+
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61555838731776" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/marsille_travel_agency?igsh=YTZiaHRleGNlYjZi" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:info@marsilletravel.com" class="social-link">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:+971585584820" class="social-link">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+<script src="./assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
