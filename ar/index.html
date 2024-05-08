@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,16 +9,151 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        h3{
+            font-weight: 700 !important;
+            line-height: 1.5;
+            font-family: 'travelFont' !important;
+        }
+        a:hover{
+            text-decoration: none !important;
+        }
+        h2{
+            font-family:  var(--ff-abril-fatface) !important;
+            font-size: var(--fs-3) !important;
+            font-weight: var(--fw-500) !important;
+        }
+        body{
+            font-family: var(--ff-heebo) !important;
+        }
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-slider
+        {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .slick-list
+        {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .slick-list:focus
+        {
+            outline: none;
+        }
+        .slick-list.dragging
+        {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .slick-slider .slick-track,
+        .slick-slider .slick-list
+        {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .slick-track
+        {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+        .slick-track:before,
+        .slick-track:after
+        {
+            display: table;
+            content: '';
+        }
+        .slick-track:after
+        {
+            clear: both;
+        }
+        .slick-loading .slick-track
+        {
+            visibility: hidden;
+        }
+
+        .slick-slide
+        {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+        [dir='rtl'] .slick-slide
+        {
+            float: right;
+        }
+        .slick-slide img
+        {
+            display: block;
+        }
+        .slick-slide.slick-loading img
+        {
+            display: none;
+        }
+        .slick-slide.dragging img
+        {
+            pointer-events: none;
+        }
+        .slick-initialized .slick-slide
+        {
+            display: block;
+        }
+        .slick-loading .slick-slide
+        {
+            visibility: hidden;
+        }
+        .slick-vertical .slick-slide
+        {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+        .slick-arrow.slick-hidden {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .title h1{
+                font-size: 20px !important;
+            }
+        }
+    </style>
 </head>
 
 <body id="top" dir="rtl" style="font-family: 'travelFont' !important;font-weight: 900">
 
 <header class="header" data-header dir="ltr">
-    <div class="container">
+    <div class="contain">
 
         <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
             <ion-icon name="menu-outline" class="open"></ion-icon>
@@ -98,10 +233,10 @@
             </div>
             </div>
         <section class="section destination">
-            <div class="container">
+            <div class="contain">
 
                 <p class="section-subtitle" style="font-family: 'travelFont' !important;padding-top: 60px">الأماكن </p>
-                <h2 class="h2 section-title" style="font-family: 'travelFont' !important;padding-bottom: 10px">الأكثر زيارة</h2>
+                <h2 class="h2 section-title" style="font-family: 'travelFont' !important;font-size: 30px;padding-bottom: 10px">الأكثر زيارة</h2>
                 <ul class="destination-list">
 
                     <li class="w-50">
@@ -115,7 +250,7 @@
                             <div class="card-content">
                                 <p class="card-subtitle" style="font-family: 'travelFont' !important;">دبي</p>
 
-                                <h3 class="h3 card-title" style="font-family: 'travelFont' !important;">الإمارات العربية المتحدة</h3>
+                                <h3 class="h3 card-title" style="font-family: 'travelFont' !important;font-size: 30px;font-weight: 500 !important;">الإمارات العربية المتحدة</h3>
                             </div>
 
                         </a>
@@ -132,7 +267,7 @@
                             <div class="card-content">
                                 <p class="card-subtitle" style="font-family: 'travelFont' !important;">بانكوك</p>
 
-                                <h3 class="h3 card-title" style="font-family: 'travelFont' !important;">تايلاند</h3>
+                                <h3 class="h3 card-title" style="font-family: 'travelFont' !important;font-size: 30px;font-weight: 500 !important;">تايلاند</h3>
                             </div>
 
                         </a>
@@ -149,7 +284,7 @@
                             <div class="card-content">
                                 <p class="card-subtitle" style="font-family: 'travelFont' !important;">تبليسي</p>
 
-                                <h3 class="h3 card-title" style="font-family: 'travelFont' !important;">جورجيا</h3>
+                                <h3 class="h3 card-title" style="font-family: 'travelFont' !important;font-size: 30px;font-weight: 500 !important;">جورجيا</h3>
                             </div>
 
                         </a>
@@ -166,7 +301,7 @@
                             <div class="card-content">
                                 <p class="card-subtitle" style="font-family: 'travelFont' !important;">باكو</p>
 
-                                <h3 class="h3 card-title" style="font-family: 'travelFont' !important;">أذربيجان</h3>
+                                <h3 class="h3 card-title" style="font-family: 'travelFont' !important;font-size: 30px;font-weight: 500 !important;">أذربيجان</h3>
                             </div>
 
                         </a>
@@ -183,7 +318,7 @@
                             <div class="card-content">
                                 <p class="card-subtitle" style="font-family: 'travelFont' !important;">مكة</p>
 
-                                <h3 class="h3 card-title" style="font-family: 'travelFont' !important;">السعودية</h3>
+                                <h3 class="h3 card-title" style="font-family: 'travelFont' !important;font-size: 30px;font-weight: 500 !important;">السعودية</h3>
                             </div>
 
                         </a>
@@ -195,7 +330,7 @@
         </section>
 
         <section class="section popular">
-            <div class="container">
+            <div class="contain">
 
                 <p class="section-subtitle" style="font-family: 'travelFont' !important;">رحلاتنا</p>
 
@@ -316,7 +451,7 @@
             </div>
         </section>
         <section class="section about">
-            <div class="container">
+            <div class="contain">
 
                 <div class="about-content">
 
@@ -332,8 +467,35 @@
                 <figure class="about-banner" style="height: 100%;">
                     <img src="../assets/images/marsille.jpg" width="756" height="842" loading="lazy" alt="" class="w-100">
                 </figure>
-
             </div>
+
+            <h2 class="h2 section-title" style="font-family: 'travelFont' !important;padding-bottom: 10px;text-align: center;padding-top: 50px">الخطوط الجوية</h2>
+                <section  dir="ltr" class="customer-logos slider contain" style=" grid-template-columns: none!important;padding-top: 60px">
+                    <div class="slide"><img src="../assets/images/airlines/Air-Arabia-logo.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/Air_Asia-logo-5ACDC17858-seeklogo.com.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/airindia.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/biman-bangladesh-airlines-logo.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/British_Airways-Logo.wine.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/ChamWingsAirlinesLogo.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/China-Eastern-Airlines-logo.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/China-Southern-logo.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/emirates-airlines.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/FlyDubai-Logo.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/Etihad-Airways-Logo-2003.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/FreeVector-Syrian-Air.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/garuda.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/IndiGo.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/malaysia.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/nas-air-flynas8667.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/Qatar-Airways-Logo.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/Saudi-Arabian-Airlines-logo.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/Singapore_Airlines-Logo.wine.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/SriLankan_Airlines-Logo.wine.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/spicejet.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/Turkish_Airlines_logo.png"></div>
+                    <div class="slide"><img src="../assets/images/airlines/US-Bangla%20Airlines.png"></div>
+
+                </section>
             <h2 class="h2 section-title" style="font-family: 'travelFont' !important;padding-bottom: 10px;text-align: center;padding-top: 50px">ميزاتنا</h2>
             <div style="display: flex;justify-content: center">
                 <ul class="about-list-2 " style="padding-top: 10px">
@@ -452,7 +614,7 @@
 </main>
 
 <footer class="footer" style="background-image: url('../assets/images/footer-bg.png')">
-    <div class="container">
+    <div class="contain">
 
         <div class="footer-top">
 
@@ -586,8 +748,9 @@
 </a>
 
 
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <script>
     // Activating the animation of the news bar
     var totalWidth = 0;
@@ -621,6 +784,32 @@
     });
 
 </script>
+<script>
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+</script>
+
+
 <script src="../assets/js/script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
