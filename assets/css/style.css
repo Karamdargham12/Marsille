@@ -148,7 +148,7 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.contain { padding-inline: 15px; }
 @media (max-width:1201px) {
   .title{
     position: absolute;
@@ -322,7 +322,7 @@ body {
   transition-duration: 0.35s;
 }
 
-.header .container {
+.header .contain {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -458,7 +458,7 @@ body {
 
 .destination-card .card-title {
   color: var(--white-1);
-  font-family: var(--ff-abril-fatface);
+  font-family: var(--ff-abril-fatface) !important;
 }
 
 
@@ -509,7 +509,8 @@ body {
 
 
 .about-item {
-  border: 1px solid white;
+  margin: 6px;
+  border: 1.1px solid hsl(180deg 98% 31% / 35%);
   box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.1);
   border-radius: var(--radius-6);
   overflow: hidden;
@@ -517,8 +518,6 @@ body {
   height: 160px;
   padding: 10px;
   text-align: center;
-  gap: 15px;
-
 }
 
 .about-item-icon {
@@ -733,7 +732,7 @@ body {
    * REUSED STYLE
    */
 
-  .container {
+  .contain {
     max-width: 750px;
     margin-inline: auto;
   }
@@ -753,7 +752,7 @@ body {
     place-items: center;
   }
 
-  .hero .container {
+  .hero .contain {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -824,7 +823,7 @@ body {
   }
 
 
-  .container { max-width: 980px; }
+  .contain { max-width: 980px; }
 
   .popular-list,
   .blog-list { grid-template-columns: repeat(3, 1fr); }
@@ -915,7 +914,7 @@ body {
    * ABOUT
    */
 
-  .about .container {
+  .about .contain {
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     align-items: center;
@@ -982,7 +981,7 @@ body {
    * REUSED STYLE
    */
 
-  .container { max-width: 1150px; }
+  .contain { max-width: 1150px; }
 
   :is(.popular, .blog) .card-content { padding: 30px; }
 
@@ -1000,7 +999,7 @@ body {
    * ABOUT
    */
 
-  .about .container { grid-template-columns: 0.7fr 1fr; }
+  .about .contain { grid-template-columns: 0.7fr 1fr; }
 
 }
 @media (max-width: 768px) {
@@ -1016,12 +1015,12 @@ body {
     text-align: center;
   }
   .titleEn{
-    padding-top: 80px;
+    padding-top: 100px;
     text-align: left;
     top: 0;
     width: 100%;
     padding-left:0px ;
-    font-size: 15px;
+    font-size: 14px;
   }
   .titleEn h1{
     width: 40%;
