@@ -797,10 +797,10 @@ body {
     width: 70%;
   }
   .logo {
-    width: 30%;
+    width: 40%;
   }
   nav div{
-    width: 33%;display: flex;justify-content: center
+    width: 50%;display: flex;justify-content: center
   }
   .t-about{
     text-align: start;
