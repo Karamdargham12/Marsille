@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marsille Travel</title>
+  <title>services</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,20 +21,39 @@
         .grid{ grid-template-columns: 1fr 1fr ; }
         .griy { grid-template-columns: 1fr 1fr 1fr ; }
         .about-item{
-            width: 420px !important;
+            width: 100% !important;
+            padding: 25px;
         }
+        #bu{
+            display: none;
+         }
         .about-item-icon{
             justify-content: start !important;
-            width: 400px !important;
+            width: 100% !important;
+            padding: 0px;
         }
         .grid1{ grid-template-columns: 1fr 1fr ; }
         @media (max-width:900px) {
             .visa-section{
             grid-template-columns: 1fr ;
         }
+        #largeCard{
+            display: none;
+        }
         .visa-section img{
            padding-top: 30px;
         }
+        #bu{
+            display: block;
+        }
+        }
+        .box{
+            box-shadow: 0 0 20px 2px rgba(0, 0, 0 ,1);
+            transition: 1s;
+        }
+        .box:hover{
+        transform: scale(1.1);
+        z-index: 1;
         }
   
     </style>
@@ -112,218 +131,196 @@
     </div>
 </div>
 
-<div style="display: flex;justify-content: center">
+<div style="display: flex;justify-content: center ;padding-top: 30px;">
+<div style="width: 80%;">
     <ul class="about-list-2 ">
-
-
-      <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Business Travel Management</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 15px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Corporate Travel Solutions</span></div>
-        </div>
+    <li class="about-item">
+    <div style="display: flex; justify-content: center;">
+            <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Trip Management</span></div>
+    </div>
+    <div>
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> Hotel and flight reservations within the traveler's budget.</span></div>
+    </div>
     </li>
 
     <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Group Travel & Trade Missions</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 70px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Luxury Leisure Travel</span></div>
+    <div style="display: flex; justify-content: center;">
+            <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Corporate Travel Solutions</span></div>
+    </div>
+    <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> Customized travel programs tailored to the needs of businesses.</span></div>
         </div>
     </li>
     <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Global Travel Solutions</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Marine & Energy Divisions</span></div>
-        </div>
+    <div style="display: flex;justify-content: center;">
+            <div style="font-size: 30px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Group Travel</span></div>
+    </div>
+    <div class="about-item-icon">
+            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7;">Organizing group trips to various destinations around the world.</span></div>
+    </div>
     </li>
     
-    </ul>
-  </div>
+</ul>
+</div>
+</div>
 
+
+  <div style="display: flex;justify-content: center;">
+    <button id="bu" style="border:2px solid hsl(180deg 97.48% 31.18%);  ;padding: 10px;border-radius: 10px; color:hsl(222, 46%, 17%);font-size: 23px;font-weight: var(--fw-500); font-family: var(--ff-abril-fatface); text-align: center; margin-top:30px;"> More ...</button>
+</div>
+
+<div id="largeCard">
   
-<div style="display: flex;justify-content: center">
-    <ul class="about-list-2 ">
-
-
-      <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-5);line-height: 1.7 !important">Flights:Economy,Business,First Class</span></div>
+    <div style="display: flex;justify-content: center ;padding-top: 30px;">
+        <div style="width: 80%;">
+            <ul class="about-list-2 ">
+            <li class="about-item">
+            <div style="display: flex; justify-content: center;">
+                    <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Luxury Leisure Trips</span></div>
+            </div>
+            <div>
+                    <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">Luxurious and unique travel experiences to To tourist countries.</span></div>
+            </div>
+            </li>
+        
+            <li class="about-item">
+            <div style="display: flex; justify-content: center;">
+                    <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Flight Ticket Booking</span></div>
+            </div>
+            <div class="about-item-icon">
+                    <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">  Booking economy, business, and first-class travel tickets on all airlines worldwide.</span></div>
+                </div>
+            </li>
+            <li class="about-item">
+            <div style="display: flex;justify-content: center;">
+                    <div style="font-size: 30px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);"> Business Jet Charter</span></div>
+            </div>
+            <div style="display: flex;justify-content: center;">
+                    <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> Organizing private jet charter flights.</span></div>
+            </div>
+            </li>
+            
+        </ul>
         </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Executive Aircrat Charter</span></div>
         </div>
-    </li>
 
-    <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Meet & Assist Services</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Car Rental</span></div>
-        </div>
-    </li>
-    <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Hotel Bookings:Independent&Chains</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Eurostar, Rail&Ferry</span></div>
-        </div>
-    </li>
-    
-    </ul>
-  </div>
-
-  <div style="display: flex;justify-content: center">
-    <ul class="about-list-2 ">
-
-
-      <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Transfers</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 15px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Full Inbound&Outbound Bundled Packages </span></div>
-        </div>
-    </li>
-
-    <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Business Travel Insurance</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 70px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Visa Applications</span></div>
-        </div>
-    </li>
-    <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Chauffer Services</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Travel Packages</span></div>
-        </div>
-    </li>
-    
-    </ul>
-  </div>
-  <div style="display: flex;justify-content: center">
-    <ul class="about-list-2 ">
-
-
-      <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Online Booking</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 15px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Dedicated Account Management </span></div>
-        </div>
-    </li>
-
-    <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important"> Team Building activities ,Trips</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 70px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Senior Travel Consultant</span></div>
-        </div>
-    </li>
-    <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Travel Alerts</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Promotions</span></div>
-        </div>
-    </li>
-    
-    </ul>
-  </div>
-  <div style="display: flex;justify-content: center">
-    <ul class="about-list-2 ">
-
-
-      <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Desert Safari</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 15px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Dhow Cruise & Much More </span></div>
-        </div>
-    </li>
-
-    <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Business Travel Insurance</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 70px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Visa Applications</span></div>
-        </div>
-    </li>
-    <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Chauffer Services</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Travel Packages</span></div>
-        </div>
-    </li>
-    
-    </ul>
-  </div>
-  <div style="display: flex;justify-content: center">
-    <ul class="about-list-2 ">
-
-
-      <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Promotions</span></div>
-        </div>
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);padding-right: 15px;"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Desert Safari </span></div>
-        </div>
-    </li>
-    <li class="about-item">
-
-        <div class="about-item-icon">
-            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <ion-icon name="checkmark-circle-outline" ></ion-icon><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 !important">Dhow Cruise & Much More</span></div>
-        </div>
-      
-    </li>
-
-    
-   
-    
-    </ul>
-  </div>
+        <div style="display: flex;justify-content: center ;padding-top: 30px;">
+            <div style="width: 80%;">
+                <ul class="about-list-2 ">
+                <li class="about-item">
+                <div style="display: flex; justify-content: center;">
+                        <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);"> Meet and Assist Services</span></div>
+                </div>
+                <div>
+                        <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> Airport reception and assistance with general travel matters.</span></div>
+                </div>
+                </li>
+            
+                <li class="about-item">
+                <div style="display: flex; justify-content: center;">
+                        <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Car Rental</span></div>
+                </div>
+                <div class="about-item-icon">
+                        <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> Arranging private car rental services during the trip.</span></div>
+                    </div>
+                </li>
+                <li class="about-item">
+                <div style="display: flex;justify-content: center;">
+                        <div style="font-size: 30px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Hotel Reservations</span></div>
+                </div>
+                <div class="about-item-icon">
+                        <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">Securing hotel reservations anywhere in the world.</span></div>
+                </div>
+                </li>
+                
+            </ul>
+            </div>
+            </div>
+            <div style="display: flex;justify-content: center ;padding-top: 30px;">
+                <div style="width: 80%;">
+                    <ul class="about-list-2 ">
+                    <li class="about-item">
+                    <div style="display: flex; justify-content: center;">
+                            <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Train and Ferry Ticket Booking</span></div>
+                    </div>
+                    <div>
+                            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">Booking train and ferry tickets in different locations.</span></div>
+                    </div>
+                    </li>
+                
+                    <li class="about-item">
+                    <div style="display: flex; justify-content: center;">
+                            <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Round Trip Travel Packages</span></div>
+                    </div>
+                    <div class="about-item-icon">
+                            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">Packages that include arrival and departure to and from the destination.</span></div>
+                        </div>
+                    </li>
+                    <li class="about-item">
+                    <div style="display: flex;justify-content: center;">
+                            <div style="font-size: 30px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);"> Business Travel Insurance</span></div>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                            <div style="font-size: 20px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> Travel insurance for business trips.</span></div>
+                    </div>
+                    </li>
+                    
+                </ul>
+                </div>
+                </div>
+                <div style="display: flex;justify-content: center ;padding-top: 30px;">
+                    <div style="width: 80%;">
+                        <ul class="about-list-2 ">
+                        <li class="about-item">
+                        <div style="display: flex; justify-content: center;">
+                                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Visa Applications</span></div>
+                        </div>
+                        <div>
+                                <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">Assistance with submitting travel visa applications.</span></div>
+                        </div>
+                        </li>
+                    
+                        <li class="about-item">
+                        <div style="display: flex; justify-content: center;">
+                                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Private Driver Services</span></div>
+                        </div>
+                        <div class="about-item-icon">
+                                <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> Arranging private driver services during the trip.</span></div>
+                            </div>
+                        </li>
+                        <li class="about-item">
+                        <div style="display: flex;justify-content: center;">
+                                <div style="font-size: 30px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Online Travel Booking</span></div>
+                        </div>
+                        <div style="display: flex;justify-content: center;">
+                                <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> Easy and quick online travel booking.</span></div>
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    </div>
+                    </div>
+                    <div style="display: flex;justify-content: center ;padding-top: 30px;">
+                        <div style="width: 80%;">
+                            <ul class="about-list-2 ">
+                            <li class="about-item">
+                            <div style="display: flex; justify-content: center;">
+                                    <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">Dedicated Account Manager Coordination</span></div>
+                            </div>
+                            <div style="display: flex;justify-content: center;">
+                                    <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">Assigning a dedicated account manager to assist with all travel needs.</span></div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                        </div>
+                        </div>
+  
 
   
 <div>
-
-      </div>
-
-
-
+</div>
+</div>
 <div>
     
 
@@ -331,15 +328,15 @@
         <div class="  contain" >
             <div class="visa-section">
         
-                    <div >
-                        <p style="font-family: var(--ff-comforter-brush); color: var(--mikado-yellow);font-size: var(--fs-3); text-align: center ;padding-top: 40px!important; "  class="section-subtitle">country Of</p>
+                    <div class="text-align:center; margin-bottom:10px;margin-right:20px;" >
+                        <p style="font-family: var(--ff-comforter-brush); color: var(--mikado-yellow);font-size: var(--fs-3); text-align: center !important; "  class="section-subtitle">country Of</p>
                         <h2 style="color: var(--jet);font-size: var(--fs-3);font-weight: var(--fw-500); font-family: var(--ff-abril-fatface); text-align: center !important" class="h2 section-title">Visa Service</h2>
-                        <p class="contain"  style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7; text-align: center; padding-top: 30px !important;">
-             UAE Visa ,Schengen Visa File Process, USA Tourist Visa File Process,UK Tourist Visa File Process, Canada Tourist Visa File Process, India Visa, Malaysia E Visa, Thailand Visa, Singapore Visa, Vietnam Sticker Visa, Vietnam Visa Approval, China Visa File process, Egypt Visa File process, Turkey Visa File process, Australia Tourist Visa File Process, Keneya E Visa. 
+                        <p class="contain"  style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7; text-align: center; padding-top: 30px ; margin-bottom: 20px!important;">
+                         UAE Visa ,Schengen Visa File Process, USA Tourist Visa File Process,UK Tourist Visa File Process, Canada Tourist Visa File Process, India Visa, Malaysia E Visa, Thailand Visa, Singapore Visa, Vietnam Sticker Visa, Vietnam Visa Approval, China Visa File process, Egypt Visa File process, Turkey Visa File process, Australia Tourist Visa File Process, Keneya E Visa. 
                         </p>
                     </div>
                    
-                   <img style="width: 100%; " src="./assets/images/visa-01.png " >
+                   <img class="box" style="width: 100%; " src="./assets/images/visa-01.png " >
                   
               </div>
         </div>
@@ -512,7 +509,16 @@
     </div>
 </footer>
 
+<script>
+    var button=document.getElementById('bu')
+    var largCard=document.querySelector('#largeCard')
+   button.onclick=function(){
+    largCard.style.display="block"
+    button.style.display='none'
+  
 
+   }
+</script>
 
 
 
