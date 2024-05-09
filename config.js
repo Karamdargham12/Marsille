@@ -40,7 +40,12 @@ function formSubmit(e) {
 }
 
 //Send Message to Firebase(4)
-function sendMessage(name, email,phone,message) {
+function sendMessage(name, email, phone, message) {
+    // Show loading indicator
+    document.querySelector('.loading').style.display = 'block';
+    document.querySelector('#contact').style.display = 'none';
+    document.querySelector('.footer').style.display = 'none';
+
     const database = getDatabase();
 
     set(ref(database, 'users/' + Math.floor(Math.random() * 10000000)), {
@@ -49,14 +54,20 @@ function sendMessage(name, email,phone,message) {
         phone: phone,
         message: message
     }).then(() => {
-        //Show Alert Message(5)
+        // Hide loading indicator
+        document.querySelector('.loading').style.display = 'none';
+
+        // Show Alert Message
         document.querySelector('.alert').style.display = 'block';
-        //Hide Alert Message After Seven Seconds(6)
+
+        // Redirect after 3 seconds and reset the form
         setTimeout(function () {
-            window.location.href='./index.html'
+            window.location.href = './index.html';
         }, 3000);
         document.getElementById('registrationform').reset();
     }).catch((error) => {
-        alert(error)
-    })
+        // Hide loading indicator if there's an error
+        document.querySelector('.loading').style.display = 'none';
+        alert(error);
+    });
 }

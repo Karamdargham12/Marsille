@@ -11,6 +11,9 @@
 .logo-footer{
   width: 30%;
 }
+.logo{
+  display: none;
+}
 .logo-mobile{
   display: none;
 }
@@ -795,9 +798,11 @@ body {
 
   .logo-footer{
     width: 70%;
+    display: block!important;
   }
   .logo {
     width: 40%;
+    display: block!important;
   }
   nav div{
     width: 50%;display: flex;justify-content: center

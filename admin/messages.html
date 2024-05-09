@@ -17,6 +17,9 @@
 
 </head>
 <style>
+    .navbar{
+        flex-wrap: nowrap;
+    }
     a{
     text-decoration: none ;
 }
@@ -79,6 +82,10 @@ padding-top: 20px;
                     </li>
 
                     <li>
+                        <a href="../services.html" class="navbar-link">Services</a>
+                    </li>
+
+                    <li>
                         <a href="../about-us.html" class="navbar-link">About Us</a>
                     </li>
 
@@ -90,10 +97,11 @@ padding-top: 20px;
                         <a href="../contact-us.html" class="navbar-link">Contact Us</a>
                     </li>
 
+
                 </ul>
             </div>
             <div>
-                <a href="../ar/index.html"><img src="../assets/images/uae.png"></a>
+                <a href="../ar/services.html"><img src="../assets/images/uae.png"></a>
             </div>
         </nav>
 
@@ -251,7 +259,19 @@ padding-top: 20px;
 <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
     <ion-icon name="chevron-up-outline"></ion-icon>
 </a>
+<script type="module">
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 
+    const auth = getAuth();
+    onAuthStateChanged(auth, user => {
+        if (!user) {
+            // User is not signed in, redirect them to the login page
+            window.location.href = '/login.html';
+        } else {
+            // User is signed in, display the page or perform other actions
+        }
+    });
+</script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

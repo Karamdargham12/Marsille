@@ -13,6 +13,23 @@
             href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
             rel="stylesheet">
     <style>
+        .loading {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            transform: translate(-50%,-50%);
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
         html {
             height: 100%;
         }
@@ -123,7 +140,7 @@
                     </li>
 
                     <li>
-                        <a href="./about-us.html" class="navbar-link">حول</a>
+                        <a href="./about-us.html" class="navbar-link">حولنا</a>
                     </li>
 
                     <li>
@@ -143,6 +160,8 @@
 
     </div>
 </header>
+<div class="loading" style="display: none;">
+</div>
 <div class="contact" id="contact" style="height: 100%;" dir="rtl">
     <div class="contain">
         <div class="col-md-offset-1 col-md-10" style="margin-bottom: 20px;padding-top: 20px">
@@ -216,7 +235,7 @@
                 </li>
 
                 <li>
-                    <a href="./about-us.html" class="footer-link">حول</a>
+                    <a href="./about-us.html" class="footer-link">حولنا</a>
                 </li>
                 
 

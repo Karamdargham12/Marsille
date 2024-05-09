@@ -22,12 +22,13 @@
         .about-item{
             width: 100% !important;
             padding: 25px;
+            height: 180px;
         }
         #bu{
             display: none;
          }
         .about-item-icon{
-            justify-content: start !important;
+            justify-content: center !important;
             width: 100% !important;
             padding: 0px;
         }
@@ -53,6 +54,11 @@
         .box:hover{
         transform: scale(1.1);
         z-index: 1;
+        }
+        @media (max-width: 768px) {
+            #largeCard div{
+                padding-top: 0px !important;
+            }
         }
         </style>
     </head>
@@ -84,7 +90,7 @@
 
     
                     <li>
-                        <a href="../ar/about-us.html" class="navbar-link">حول</a>
+                        <a href="../ar/about-us.html" class="navbar-link">حولنا</a>
                     </li>
     
                     <li>
@@ -99,7 +105,7 @@
                 </ul>
                 </div>
                 <div>
-                <a dir="ltr" href="../index.html"><img src="../assets/images/usa.png"></a>
+                <a dir="ltr" href="../services.html"><img src="../assets/images/usa.png"></a>
                 </div>
             </nav>
     
@@ -107,9 +113,9 @@
     </header>
     
     <div style="padding-top:50px;">
-        <p style="font-family: var(--ff-comforter-brush); color: var(--mikado-yellow);
+        <p style="font-family: 'travelFont'; color: var(--mikado-yellow);
         font-size: var(--fs-3);; text-align: center ;padding-top: 40px!important; "  class="section-subtitle">خدماتنا</p>
-        <h2 style="color: var(--jet);font-size: var(--fs-3);font-weight: var(--fw-500); font-family: var(--ff-abril-fatface); text-align: center !important" class="h2 section-title">قائمة شاملة</h2>
+        <h2 style="color: var(--jet);font-size: var(--fs-3);font-weight: var(--fw-500); font-family: 'travelFont'; text-align: center !important" class="h2 section-title">قائمة شاملة</h2>
         <p class="contain"  style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7; text-align: center; padding-top: 30px !important;">
             إن سعينا هو توفير حلول سفر شاملة لشركائنا وعملائهم. سواء كان ذلك مناسبًا أو سفرًا عائليًا أو مجموعات ترفيهية أو سفر عمل أو حدثًا الإدارة، نحن لا نترك أي جهد في أن نكون مقدمي الحلول الشاملة في الوجهات التي نديرها
         </p>
@@ -118,7 +124,7 @@
         <div class="grid contain" >
             <div style="display: flex;justify-content: center">
         
-                    <div style="margin-right: 20px;" >
+                    <div style="margin-left: 20px;" >
                    <img style="width: 100%; height: 100%;" src="../assets/images/close-up-people-holding-map.jpg">
                     </div>
                     <div  >
@@ -133,27 +139,27 @@
         <ul class="about-list-2 ">
         <li class="about-item">
         <div style="display: flex; justify-content: center;">
-                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">إدارة الرحلات</span></div>
+                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">إدارة الرحلات</span></div>
         </div>
         <div style="display:flex;justify-content: center;">
-                <div style="font-size: 20px;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;text-align: center;"> حجز الفنادق وتذاكر الطيران مع مراعاة ميزانية المسافر.</span></div>
+                <div style="font-size:24px;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;text-align: center;"> حجز الفنادق وتذاكر الطيران مع مراعاة ميزانية المسافر.</span></div>
         </div>
         </li>
     
         <li class="about-item">
         <div style="display: flex; justify-content: center;">
-                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">حلول سفر للشركات</span></div>
+                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">حلول سفر للشركات</span></div>
         </div>
         <div class="about-item-icon">
-                <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">  برامج سفر مخصصة لاحتياجات الشركات.</span></div>
+                <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">  برامج سفر مخصصة لاحتياجات الشركات.</span></div>
             </div>
         </li>
         <li class="about-item">
         <div style="display: flex;justify-content: center;">
-                <div style="font-size: 30px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">رحلات جماعية</span></div>
+                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">رحلات جماعية</span></div>
         </div>
         <div class="about-item-icon">
-                <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7;"> تنظيم رحلات جماعية إلى العديد من الأماكن حول العالم.</span></div>
+                <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7;"> تنظيم رحلات جماعية إلى العديد من الأماكن حول العالم.</span></div>
         </div>
         </li>
         
@@ -163,7 +169,7 @@
     
     
       <div style="display: flex;justify-content: center;">
-        <button id="bu" style="border:2px solid hsl(180deg 97.48% 31.18%);  ;padding: 10px;border-radius: 10px; color:hsl(222, 46%, 17%);font-size: 23px;font-weight: var(--fw-500); font-family: var(--ff-abril-fatface); text-align: center; margin-top:30px;"> ...المزيد</button>
+        <button id="bu" style="border:2px solid hsl(180deg 97.48% 31.18%);  ;padding: 10px;border-radius: 10px; color:hsl(222, 46%, 17%);font-size: 23px;font-weight: var(--fw-500); font-family: 'travelFont'; text-align: center; margin-top:30px;"> ...المزيد</button>
     </div>
     
     <div id="largeCard">
@@ -173,27 +179,27 @@
                 <ul class="about-list-2 ">
                 <li class="about-item">
                 <div style="display: flex; justify-content: center;">
-                        <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">رحلات ترفيهية فاخرة</span></div>
+                        <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">رحلات ترفيهية فاخرة</span></div>
                 </div>
                 <div>
-                        <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">تجارب سفر فاخرة وفريدة إلى الدول السياحية.</span></div>
+                        <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">تجارب سفر فاخرة وفريدة إلى الدول السياحية.</span></div>
                 </div>
                 </li>
             
                 <li class="about-item">
                 <div style="display: flex; justify-content: center;">
-                        <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">حجز تذاكر الطيران</span></div>
+                        <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">حجز تذاكر الطيران</span></div>
                 </div>
                 <div class="about-item-icon">
-                        <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> حجز تذاكر السفر للدرجة السياحية والتجارية والأولى على كافة شركات الطيران حول العالم.</span></div>
+                        <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> حجز تذاكر السفر للدرجة السياحية والتجارية والأولى على كافة شركات الطيران حول العالم.</span></div>
                     </div>
                 </li>
                 <li class="about-item">
                 <div style="display: flex;justify-content: center;">
-                        <div style="font-size: 30px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);"> تأجير طائرات رجال الأعمال</span></div>
+                        <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';"> تأجير طائرات رجال الأعمال</span></div>
                 </div>
                 <div style="display: flex;justify-content: center;">
-                        <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> تنظيم رحلات خاصة باستئجار طائرات رجال الأعمال.</span></div>
+                        <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> تنظيم رحلات خاصة باستئجار طائرات رجال الأعمال.</span></div>
                 </div>
                 </li>
                 
@@ -206,27 +212,27 @@
                     <ul class="about-list-2 ">
                     <li class="about-item">
                     <div style="display: flex; justify-content: center;">
-                            <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);"> خدمات الاستقبال والمساعدة:</span></div>
+                            <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';"> خدمات الاستقبال والمساعدة:</span></div>
                     </div>
                     <div>
-                            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> استقبال في المطار ومساعدة بأمور السفر العامة.</span></div>
+                            <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> استقبال في المطار ومساعدة بأمور السفر العامة.</span></div>
                     </div>
                     </li>
                 
                     <li class="about-item">
                     <div style="display: flex; justify-content: center;">
-                            <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">تأجير السيارات</span></div>
+                            <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">تأجير السيارات</span></div>
                     </div>
                     <div class="about-item-icon">
-                            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">  تأمين خدمة تأجير سيارات خاصة أثناء الرحلة.</span></div>
+                            <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">  تأمين خدمة تأجير سيارات خاصة أثناء الرحلة.</span></div>
                         </div>
                     </li>
                     <li class="about-item">
                     <div style="display: flex;justify-content: center;">
-                            <div style="font-size: 30px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">حجز الفنادق</span></div>
+                            <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">حجز الفنادق</span></div>
                     </div>
                     <div class="about-item-icon">
-                            <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">تأمين حجز فندقي بأي مكان في العالم.</span></div>
+                            <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">تأمين حجز فندقي بأي مكان في العالم.</span></div>
                     </div>
                     </li>
                     
@@ -238,27 +244,27 @@
                         <ul class="about-list-2 ">
                         <li class="about-item">
                         <div style="display: flex; justify-content: center;">
-                                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">حجز تذاكر القطارات والعبارات</span></div>
+                                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">حجز تذاكر القطارات والعبارات</span></div>
                         </div>
                         <div>
-                                <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">حجز تذاكر القطارات والعبارات في أماكن مختلفة.</span></div>
+                                <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">حجز تذاكر القطارات والعبارات في أماكن مختلفة.</span></div>
                         </div>
                         </li>
                     
                         <li class="about-item">
                         <div style="display: flex; justify-content: center;">
-                                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">باقات سفر ذهاباً وإياباً</span></div>
+                                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">باقات سفر ذهاباً وإياباً</span></div>
                         </div>
                         <div class="about-item-icon">
-                                <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">باقات تشمل الوصول والمغادرة من وإلى الوجهة.</span></div>
+                                <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">باقات تشمل الوصول والمغادرة من وإلى الوجهة.</span></div>
                             </div>
                         </li>
                         <li class="about-item">
                         <div style="display: flex;justify-content: center;">
-                                <div style="font-size: 30px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);"> تأمين السفر للعمل</span></div>
+                                <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';"> تأمين السفر للعمل</span></div>
                         </div>
                         <div style="display: flex;justify-content: center;">
-                                <div style="font-size: 20px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">  تأمين سفر للرحلات العملية.</span></div>
+                                <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">  تأمين سفر للرحلات العملية.</span></div>
                         </div>
                         </li>
                         
@@ -270,27 +276,27 @@
                             <ul class="about-list-2 ">
                             <li class="about-item">
                             <div style="display: flex; justify-content: center;">
-                                    <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">طلبات التأشيرة</span></div>
+                                    <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">طلبات التأشيرة</span></div>
                             </div>
                             <div>
-                                    <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">مساعدة في تقديم طلبات التأشيرة للسفر.</span></div>
+                                    <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;">مساعدة في تقديم طلبات التأشيرة للسفر.</span></div>
                             </div>
                             </li>
                         
                             <li class="about-item">
                             <div style="display: flex; justify-content: center;">
-                                    <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">خدمات سائق خاص</span></div>
+                                    <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color:hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">خدمات سائق خاص</span></div>
                             </div>
                             <div class="about-item-icon">
-                                    <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> تنظيم خدمات سائق خاص أثناء الرحلة.</span></div>
+                                    <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> تنظيم خدمات سائق خاص أثناء الرحلة.</span></div>
                                 </div>
                             </li>
                             <li class="about-item">
                             <div style="display: flex;justify-content: center;">
-                                    <div style="font-size: 30px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">حجز السفر عبر الإنترنت</span></div>
+                                    <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">حجز السفر عبر الإنترنت</span></div>
                             </div>
                             <div style="display: flex;justify-content: center;">
-                                    <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> حجز السفر بسهولة وسرعة عبر الإنترنت.</span></div>
+                                    <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"><span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> حجز السفر بسهولة وسرعة عبر الإنترنت.</span></div>
                             </div>
                             </li>
                             
@@ -302,10 +308,10 @@
                                 <ul class="about-list-2 ">
                                 <li class="about-item">
                                 <div style="display: flex; justify-content: center;">
-                                        <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size: 20px;line-height: 1.7;font-family:  var(--ff-abril-fatface);">تنسيق مدير حساب مخصص</span></div>
+                                        <div style="font-size: 30px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: hsl(180, 98%, 31%);font-size:24px;line-height: 1.7;font-family: 'travelFont';">تنسيق مدير حساب مخصص</span></div>
                                 </div>
                                 <div style="display: flex;justify-content: center;">
-                                        <div style="font-size: 20px;display: flex;justify-content: start;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> تعيين مدير حساب مخصص لمساعدتك في جميع احتياجات السفر.</span></div>
+                                        <div style="font-size:24px;display: flex;justify-content: center;align-items: center;gap: 5px ;color: hsl(180deg 97.48% 31.18%);"> <span style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7 ;"> تعيين مدير حساب مخصص لمساعدتك في جميع احتياجات السفر.</span></div>
                                 </div>
                                 </li>
                                 
@@ -326,8 +332,7 @@
                 <div class="visa-section">
             
                         <div class="text-align:center; margin-bottom:10px;margin-right:20px;" >
-                            <p style="font-family: var(--ff-comforter-brush); color: var(--mikado-yellow);font-size: var(--fs-3); text-align: center !important; "  class="section-subtitle">بلد</p>
-                            <h2 style="color: var(--jet);font-size: var(--fs-3);font-weight: var(--fw-500); font-family: var(--ff-abril-fatface); text-align: center !important" class="h2 section-title">خدمة التأشيرة</h2>
+                            <h2 style="color: var(--jet);font-size: var(--fs-3);font-weight: var(--fw-500); font-family: 'travelFont'; text-align: center !important" class="h2 section-title">خدمة التأشيرة</h2>
                             <p class="contain"  style="color: var(--battleship-gray);font-size: var(--fs-6);line-height: 1.7; text-align: center; padding-top: 30px ; margin-bottom: 20px!important;">
                                 تأشيرة الإمارات العربية المتحدة، عملية ملف تأشيرة شنغن، عملية ملف التأشيرة السياحية للولايات المتحدة الأمريكية، عملية ملف التأشيرة السياحية للمملكة المتحدة، عملية ملف التأشيرة السياحية الكندية، تأشيرة الهند، تأشيرة ماليزيا الإلكترونية، تأشيرة تايلاند، تأشيرة سنغافورة، تأشيرة ملصق فيتنام، الموافقة على تأشيرة فيتنام، ملف تأشيرة الصين العملية، عملية ملف التأشيرة المصرية، عملية ملف التأشيرة التركية، عملية ملف التأشيرة السياحية الأسترالية، تأشيرة كينيا الإلكترونية.
                             </p>
@@ -422,7 +427,7 @@
                     </li>
     
                     <li>
-                        <a href="./about-us.html" class="footer-link">حول</a>
+                        <a href="./about-us.html" class="footer-link">حولنا</a>
                     </li>
                     
                     <li>
