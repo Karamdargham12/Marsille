@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+<div>
+    <h2>Login</h2>
+    <form id="login-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit" >Login</button>
+    </form>
+    <p id="error-message"></p>
+</div>
+
+
+<script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+    const firebaseConfig = {
+        apiKey: "AIzaSyA-SRMGBB0KNd62h0EN8VtjlZuXAZ3Rt2g",
+        authDomain: "marsille-travel.firebaseapp.com",
+        databaseURL: "https://marsille-travel-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "marsille-travel",
+        storageBucket: "marsille-travel.appspot.com",
+        messagingSenderId: "613416398489",
+        appId: "1:613416398489:web:40d08ae6259041715dd208",
+        measurementId: "G-NS7Y7SLP0K"
+    };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                window.location.href = './messages.html';
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                document.getElementById('error-message').textContent = 'incorrect email or password';
+            });
+    });
+</script>
+</body>
+</html>
