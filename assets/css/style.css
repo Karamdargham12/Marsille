@@ -164,7 +164,7 @@ body {
     position: absolute;
     top: 280px;
     left: 0;
-   padding-left: 10px;
+    padding-left: 10px;
     font-size: 26px;
 
   }
@@ -321,7 +321,7 @@ body {
 }
 
 .header.active {
-  height: 425px;
+  height: 350px;
   transition-duration: 0.35s;
 }
 
@@ -950,7 +950,7 @@ body {
   .title{
     text-align: left!important;
     position: absolute!important;
-    transform: translate(-100%,-50%)!important;   
+    transform: translate(-100%,-50%)!important;
     font-family: 'travelFont' !important;
     font-size:30px!important;
   }
